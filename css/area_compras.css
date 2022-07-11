@@ -1,0 +1,84 @@
+
+
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Articos_Compras{
+  background-color: aqua;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  margin-top: 1%;
+  
+}
+
+.Primeiro_Artico_Compras,
+.Segundo_Artico_Compras,
+.Terceiro_Artico_Compras{
+background-color: blue;
+
+}
+
+.Primeiro_Bloco_Superior{
+ 
+  width: 70%;
+  margin-left: 15%;
+  background-color: rgb(47, 6, 18);
+  
+  
+
+
+}
+
+.Primeiro_Bloco_Superior img{
+  width: 100%;
+  height: 57vh;
+
+  
+}
+
+.Segundo_Bloco{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-left: 17%;
+  width: 70%;
+  /background-color: rgb(48, 165, 42);
+ 
+}
+
+.Segundo_Bloco img{
+  width: 30%;
+  padding: 3%;
+
+}
+
+.Primeiro_Artico_Compras{
+width: 60%;
+background-color: beige;
+padding-top: 1%;
+
+
+}
+
+.Segundo_Artico_Compras{
+  width: 30%;
+  background-color: brown;
+  padding-top: 5%;
+}
+
+.Segundo_Artico_Compras p{
+  text-align: center;
+  
+}
+
+.Terceiro_Artico_Compras{
+  width: 25%;
+  background-color: blueviolet;
+  padding-top: 1%;
+  padding-left: 3%;
+
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+.containerDuvidas{
+    
+    width: 90%;
+    margin: 5%;
+    padding: 2%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #eca7a7;
+    border-radius: 10px;
+}
+
+.duvidasParagraph{
+    padding: 2%;
+    padding-bottom: 4%;
+}
+
+.outrasDuvidas{
+    text-align: center;
+    padding-top: 40px;
+}

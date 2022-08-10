@@ -25,8 +25,13 @@ const controlePaginas = {
 
   });
 
+  let productsFarmacia3 = allProducts.filter(function(value){
+  
+    return value.sector == "farmacia" && value.id >= 18
+  });
 
-  return res.render("farmacia",{productsFarmacia , productsFarmacia2, toThousand});
+
+  return res.render("farmacia",{productsFarmacia , productsFarmacia2, productsFarmacia3, toThousand});
 },
 // farmacia fim ----------------------------------------------------------------------------------------////////
 
@@ -67,12 +72,19 @@ const controlePaginas = {
   let productsVariedades = allProducts.filter(function(value){
 
     return value.sector == "variedades" && value.item <= 3
-  })
+  });
 
   let productsVariedades2 = allProducts.filter(function(value){
 
     return value.sector == "variedades" && value.item >= 4
-  })
+  });
+
+  
+  let productsVariedades3 = allProducts.filter(function(value){
+  
+    return value.sector == "variedades" && value.id >= 18
+  });
+
 
    return res.render("variedades", {productsVariedades, productsVariedades2, toThousand});
  },

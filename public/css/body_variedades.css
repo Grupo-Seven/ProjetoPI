@@ -11,6 +11,10 @@ body{
     border-top-right-radius: 10px;
 }
 
+p{
+    margin-top: 15px;
+}
+
 .produtcts{
     flex-direction: column;
     display: flex;
@@ -28,12 +32,16 @@ body{
     flex-wrap: wrap;
     background-color: #eca7a7;
     border-radius: 10px;
+
     text-align: center;
+
+
 }
 
 .products1 div{
     display: inline-block;
     margin: 15px;
+    padding: 10px;
     width: 340px;
     height: 510px;
     justify-content: center;
@@ -68,6 +76,7 @@ body{
     border: 0.7px solid white;
     font-weight: bold;
     align-items: center;
+
 }
 
 #buttonCarrinho{

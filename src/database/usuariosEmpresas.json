@@ -16,6 +16,7 @@
   "password": "111111",
   "passwordConfirmation": "111111",
   "id": 2
+
  },
  {
   "username": "doug",
@@ -43,5 +44,6 @@
   "password": "12345678",
   "passwordConfirmation": "12345678",
   "id": 5
+
  }
 ]

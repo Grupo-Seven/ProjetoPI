@@ -31,6 +31,10 @@ const controlePaginas = {
 // farmacia fim ----------------------------------------------------------------------------------------////////
 
 
+
+// variedades inicio -----------------------------------------------------------------------------------////////
+
+
 // pet inicio -------------------------------------------------------------------------------------////////
   pet:(req,res) =>{
    
@@ -55,6 +59,7 @@ const controlePaginas = {
 
 
   // variedades inicio -----------------------------------------------------------------------------------------////////
+
  variedades:(req,res) =>{
 
   const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
@@ -86,15 +91,13 @@ const controlePaginas = {
   return res.render("landingPageLogin");
  },
 
+
  duvidas:(req,res) => {
   //console.log(req.cookies.teste);
   return res.render("duvidas");
  },
 
 };
-
-
-
 
 
 module.exports = controlePaginas;

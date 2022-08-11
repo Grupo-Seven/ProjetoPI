@@ -86,7 +86,7 @@ const controlePaginas = {
   });
 
 
-   return res.render("variedades", {productsVariedades, productsVariedades2, toThousand});
+   return res.render("variedades", {productsVariedades, productsVariedades2, productsVariedades3, toThousand});
  },
   // variedades fim -----------------------------------------------------------------------------------------////////
 
@@ -94,7 +94,6 @@ const controlePaginas = {
  home:(req,res) =>{
 
 
-  
    return res.render("home");
  },
 

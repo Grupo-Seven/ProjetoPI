@@ -5,7 +5,6 @@
 }
 
 .containerDuvidas{
-    
     width: 90%;
     margin: 5%;
     padding: 2%;
@@ -17,10 +16,22 @@
 
 .duvidasParagraph{
     padding: 2%;
+    margin: 15px;
     padding-bottom: 4%;
+    border: red solid 1.2px;
+    background-color: rgb(247, 243, 180);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+    transition: background-color 1000ms;
+    transition-delay:all 100000s;
 }
 
-.outrasDuvidas{
+.duvidasParagraph:hover{
+    background-color: rgb(247, 180, 185);
+    border:solid 2px rgb(238, 9, 9);
+}
+
+.doubts{
     text-align: center;
-    padding-top: 40px;
+    margin-top: 70px;
 }

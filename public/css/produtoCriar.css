@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #e2abab;
+    justify-content: space-around;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: smaller;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 180, 185);
+  }
+  .col-12{
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: center;
+  }
+  .label {
+    display: block;
+    width: 45%;
+    float:left;
+  }
+  
+  .form-label {
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 10px 0;
+  }
+  
+  .form-input {
+    display: block;
+    width: 100%;
+    /* height: 25px; */
+    margin-bottom: 5px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: solid 1px;
+    padding: 0 15px;
+  }
+
+  .container-criacao{
+    padding: 2%;
+    margin: 15px;
+    padding-bottom: 4%;
+    border: red solid 1.2px;
+    background-color: rgb(247, 180, 185);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+
+  }
+
+  form{
+    padding: 5%;
+    border: red solid 1.2px;
+    background-color: rgb(247, 243, 180);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+    text-align: center;
+  }
+
+.buy-now-button{
+    padding: 2%;
+    background-color: rgb(86, 92, 94);
+    border: none;
+    border-radius: 5px;
+    cursor: grabbing;
+    color: white;
+    border: 0.7px solid white;
+    font-weight: bold;
+}
+
+  /* 
+  textarea.form-input {
+    min-height: 10px;
+    resize: vertical;
+    padding: 10px;
+  } */

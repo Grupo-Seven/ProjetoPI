@@ -25,5 +25,23 @@
   "password2": "$2a$10$vTsDANwIzwYCKa7lDZWf8eeLE/FerTK9odBCZ0n93lqrQ7ybVP/g2",
   "passwordConfirmation2": "4444444",
   "id": 3
+ },
+ {
+  "username2": "Douglas",
+  "email2": "douglas@gmail.com",
+  "cpf2": "00000000000",
+  "telefone2": "00000000000",
+  "password2": "$2a$10$8IGdP0HZLeWdd/.w2taKc.vmb8mJ4D9kb6xBThP7L43ABa4/IrxNq",
+  "passwordConfirmation2": "123456789",
+  "id": 4
+ },
+ {
+  "username2": "Douglas",
+  "email2": "douglashiuga2@gmail.com",
+  "cpf2": "11111111111",
+  "telefone2": "00000000000",
+  "password2": "$2a$10$jv8TbY3kyUYbFwXZsCtGPeKazkOkaCApdismY770dbU1V8f3cQWqm",
+  "passwordConfirmation2": "123456789",
+  "id": 5
  }
 ]

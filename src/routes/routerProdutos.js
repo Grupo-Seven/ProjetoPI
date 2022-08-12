@@ -33,6 +33,7 @@ router.get("/editProdutos/:id",controleProdutos.editProdutos);
 router.post("/criarProduto",upload.single('imagem'),controleProdutos.adicionarProduto);
 // na criacao de produtos o usuario envia imagem do produto
 router.put("/editar/:id",controleProdutos.atualizarProduto);
+//
 router.delete("/criarProduto",controleProdutos.deletarProduto);
 
 

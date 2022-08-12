@@ -96,9 +96,12 @@ editProdutos:(req, res) =>{
   res.render("descricaoProduto",{product:produtoDetalhe});
   //passando os dados do produto para view
 },
+
  atualizarProduto:(req, res) =>{
+  res.render('descricaoProduto')
 
  },
+
  deletarProduto:(req, res) =>{
 
  },

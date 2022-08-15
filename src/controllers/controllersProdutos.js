@@ -1,15 +1,48 @@
-const  todosProdutos = require("../models/produto");
+const  Product = require("../models/produto");
 const fs = require('fs');
 const path = require('path');
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 const controleProdutos = {
+  index:(req, res)=>{
+    let products1 =[]
+    let products2 =[]
+    let products3 =[]
+    const allProducts = Product.findAll() // busca a array criada do allproducts.json que esta no models
+    if(req.params.category){
+       products1 = allProducts.filter(function(value){
+
+        return value.sector == req.params.category && value.item <= 3 
+           
+      });
+    
+    
+       products2 = allProducts.filter(function(value){
+    
+        return value.sector == req.params.category && value.item >= 4
+      });
+    
+       products3 = allProducts.filter(function(value){
+    
+        return value.sector == req.params.category && value.id >= 18
+      });
+    }
+    else{
+      products1 = allProducts
+    }
+    //se houver categoria no req.params os produtos sera filtrados pela categoria, caso contrario pega todos os produtos.
+
+    console.log(products1)
+    return res.render("produtos",{products1 , products2, products3, toThousand});
+ 
+  },
+  //filtrando setor pelo req.params.category
 
   // farmacia inicio -------------------------------------------------------------------------------------////////
   detalhesFarmacia:(req,res) =>{
     
-    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
+    const allProducts = Product.findAll() // busca a array criada do allproducts.json que esta no models
     
     let item = req.params.item
     let produtoDetalhe = allProducts.find(function(produtoDetalhe)  {
@@ -25,7 +58,7 @@ const controleProdutos = {
 // variedades inicio -----------------------------------------------------------------------------------////////
   detalhesVariedades:(req,res) =>{
     
-    const allProducts = todosProdutos.findAll()
+    const allProducts = Product.findAll()
 
     let item = req.params.item
     let produtoDetalhe = allProducts.find(function(produtoDetalhe){
@@ -40,7 +73,7 @@ const controleProdutos = {
   // pet inicio ------------------------------------------------------------------------------------------////////
   detalhesPet:(req,res) =>{
     
-    const allProducts = todosProdutos.findAll()
+    const allProducts = Product.findAll()
     let item = req.params.item;
 
     let produtoDetalhe = allProducts.find(function(produtoDetalhe)  {
@@ -60,7 +93,7 @@ inserirProduto:(req, res) =>{
 // Adicionando Produto (view produtoCriar)
  adicionarProduto:(req, res) =>{
   //fazendo a leitura de todos os produtos
-  const allProducts = todosProdutos.findAll()
+  const allProducts = Product.findAll()
 
   //recupera os dados enviado
   const produto = req.body;
@@ -83,7 +116,7 @@ inserirProduto:(req, res) =>{
 
 
 editProdutos:(req, res) =>{
-  const allProducts = todosProdutos.findAll()
+  const allProducts = Product.findAll()
                                    // busca todos os produtos
 
     let id = req.params.id
@@ -98,7 +131,14 @@ editProdutos:(req, res) =>{
 },
 
  atualizarProduto:(req, res) =>{
-  res.render('descricaoProduto')
+  let id = req.params.id
+// pega os dados da URL que o usuario esta passando
+let body = req.body
+
+   Product.update(id,body)
+  // busca todos os produtos
+
+  res.redirect('/produtos/area_compras_pet/' + id )
 
  },
 

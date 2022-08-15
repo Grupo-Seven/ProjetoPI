@@ -1,0 +1,30 @@
+@import "area_compras_header.css";
+
+@import "area_compras.css";
+
+@import "body_farmacia_carrossel.css";
+
+@import "body_farmacia.css";
+
+@import "body_home_carrossel.css";
+
+@import "footer.css";
+
+@import "formulario.css";
+
+@import "formulario_header.css";
+
+@import "header.css";
+
+@import "menu_hamburguer.css";
+
+@import "pageLogin.css";
+
+@import "produtoCriar.css";
+
+@import "style.css";
+
+body{
+  wrap = wrap;
+  gap: 1 rem;
+}

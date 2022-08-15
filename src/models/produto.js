@@ -3,7 +3,7 @@ const path = require('path');
 
 const allProdutosPath = path.join(__dirname, '../database/allProdutos.json'); //pega os dados do JSON
 
-const allProducts = {
+const Product = {
 
   findAll(){
     return JSON.parse(fs.readFileSync(allProdutosPath, "utf-8")); // transforma o JSON e uma array
@@ -24,11 +24,13 @@ const allProducts = {
 
 		productBeingUpdated.description = receivedProduto.description;
 		productBeingUpdated.price = receivedProduto.price;
+    productBeingUpdated.name = receivedProduto.name;
+    productBeingUpdated.sector = receivedProduto.sector;
     this.save(produtos);
   },
 
 }
-module.exports = allProducts;
+module.exports = Product;
 
 
 

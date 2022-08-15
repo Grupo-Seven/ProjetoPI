@@ -21,6 +21,7 @@ const upload = multer({ storage });
 router.get("/area_compras_farmacia/:item",controleProdutos.detalhesFarmacia); // criação da página de detalhes 
 router.get("/area_compras_variedades/:item",controleProdutos.detalhesVariedades);
 router.get("/area_compras_pet/:item",controleProdutos.detalhesPet);
+router.get("/:category?",controleProdutos.index);
 
 // inicio detalhes do produto por id ------------------------------------------------------------///////
 
@@ -28,7 +29,7 @@ router.get("/area_compras_pet/:item",controleProdutos.detalhesPet);
 router.get("/criarProduto",controleProdutos.inserirProduto);
 ///////////   URL            CONTROLLER       FUNCAO CALLBACK(VIEW)
 //edição de produtos
-router.get("/editProdutos/:id",controleProdutos.editProdutos);
+router.get("/editar/:id",controleProdutos.editProdutos);
  //  na URL ira aparecer a variavel criada na controllerPordutos                     
 router.post("/criarProduto",upload.single('imagem'),controleProdutos.adicionarProduto);
 // na criacao de produtos o usuario envia imagem do produto

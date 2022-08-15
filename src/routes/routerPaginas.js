@@ -9,9 +9,6 @@ var  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
 router.get("/login",validaLoginCliente,controlePaginas.login);
-router.get("/farmacia",controlePaginas.farmacia);
-router.get("/pet",controlePaginas.pet);
-router.get("/variedades",controlePaginas.variedades);
 router.get("/",controlePaginas.home);
 
 

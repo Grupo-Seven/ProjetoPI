@@ -23,10 +23,10 @@
 			</div>
 		</div>
 		<div class="col-12">
-			<form action="/produtos/editar/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+			<form action="/produtos/editar/<%= product.id %>?_method=PUT" method="POST">
 					<div class="col-12">
 						<label for="name" class="label">Nome do produto:</label>
-						<input type="text" id="name" name="name" placeholder="" class="form-input" value="<%= product.description %> ">
+						<input type="text" id="name" name="name" placeholder="" class="form-input" value="<%= product.name %> ">
 					</div>
 					<div class="col-12">
 						<label for="price" class="label">Preço do produto:</label>
@@ -45,7 +45,7 @@
 					<div class="col-12">
 						<label for="description" class="label">Descrição:</label>
 						<textarea name="description" id="description"  size="20" class="form-input" >
-							<%= product.texto %>
+							<%= product.description %>
 						</textarea>
 					</div>
 

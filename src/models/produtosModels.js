@@ -13,8 +13,6 @@ return JSON.parse(fs.readFileSync(caminhoJSON,"utf-8"));
 
 
 
-
-
 }
 
 module.exports = todosProdutosJSON;

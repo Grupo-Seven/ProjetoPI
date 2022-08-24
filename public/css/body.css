@@ -25,6 +25,6 @@
 @import "style.css";
 
 body{
-  wrap = wrap;
-  gap: 1 rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }

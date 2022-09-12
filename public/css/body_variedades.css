@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#imgsize{
+    width: 100%;
+    height: 72%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.produtcts{
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(247, 243, 180);    
+}
+
+/* ============================ INÍCIO PRODUCTS 1 ============================ */
+.products1{
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #eca7a7;
+    border-radius: 10px;
+}
+
+.products1 div{
+    display: inline-block;
+    margin: 15px;
+    width: 340px;
+    height: 510px;
+    justify-content: center;
+
+    background-color: rgb(247, 243, 180);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+    transition: background-color 1000ms;
+    transition-delay:all 100000s;
+}
+
+.products1 div:hover{
+    background-color: rgb(247, 180, 185);
+    border:solid 2px rgb(238, 9, 9);
+}
+
+.products1 button:hover{
+    background-color: white;
+    color: rgb(86, 92, 94);
+    border:0.7px solid rgb(86, 92, 94);
+}
+
+.products1 button{
+    display: inline-block;
+    margin-top: 6%;
+    margin-left: 19%;
+    padding: 2%;
+    background-color: rgb(86, 92, 94);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 0.7px solid white;
+    font-weight: bold;
+}
+
+#buttonCarrinho{
+    background-color: rgb(59, 92, 79);
+}
+/* ============================ FIM PRODUCTS 1 ============================ */
+
+/* ============================ INÍCIO PRODUCTS 2 ============================ */
+.products2{
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #eca7a7;
+    border-radius: 10px;
+}
+
+.products2 div{
+    display: inline-block;
+    margin: 15px;
+    width: 340px;
+    height: 510px;
+    justify-content: center;
+
+    background-color: rgb(247, 243, 180);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+    transition: background-color 1000ms;
+    transition-delay:all 100000s;
+}
+
+.products2 div:hover{
+    background-color: rgb(247, 180, 185);
+    border:solid 2px rgb(238, 9, 9);
+}
+
+.products2 button:hover{
+    background-color: white;
+    color: rgb(86, 92, 94);
+    border:0.7px solid rgb(86, 92, 94);
+}
+
+.products2 button{
+    display: inline-block;
+    margin-top: 6%;
+    margin-left: 19%;
+    padding: 2%;
+    background-color: rgb(86, 92, 94);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 0.7px solid white;
+    font-weight: bold;
+}
+
+/* ============================ FIM PRODUCTS 2 ============================ */
+.description{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    align-items:center;
+    justify-content: center;
+    padding: 2.6%;
+}
+
+.buttonCarrinho{
+    background-color: rgb(59, 92, 79);
+}
+
+@media (max-width:846){
+
+    .products1 div{
+        flex-direction: column;
+        width: 80%;
+        margin-top:3%;
+        margin-bottom: 7%;
+    }
+  
+    .products2 div{
+        flex-direction: column;
+        width: 80%;
+        margin-top:3%;
+        margin-bottom: 7%;
+    }
+}

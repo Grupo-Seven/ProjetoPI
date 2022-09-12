@@ -12,11 +12,16 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/body_variedades_carrossel.css">
     <link rel="stylesheet" href="/css/menu_hamburguer.css">
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 </head>
 
 <body>
   
+<<<<<<< HEAD
   <header>
 
     <section class="primeiro_cabecalho">
@@ -91,6 +96,9 @@
 
 
   </header>
+=======
+<%- include ("../partials/header") %>
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
   
   <section class="body_menu_hamburguer" ></section>
   <div class="menu_hamburguer" id="menu_hamburguer">
@@ -187,6 +195,7 @@
 
             <!--corpo com imagens e detalhes com texto etc...-->
             <section class="products">
+<<<<<<< HEAD
               <div class="products1">
                   <!--corpo com imagens e detalhes com texto etc...-->
                   <div>
@@ -281,3 +290,50 @@
 
 
 </html>
+=======
+              
+              
+              <div class="products1">
+                  <!--corpo com imagens e detalhes com texto etc...-->
+                  <% productsVariedades.forEach(element => { %>
+                    
+                    <div>                  
+                      <img id= "imgsize" src="/img/<%= element.image %>" alt="">
+                      <p><%= element.description %> </p>
+                      <p> R$ <%= toThousand(element.price) %> </p>
+                      <a target="_blank" href="/produtos/area_compras_variedades/<%= element.item %> ">
+                        <button id="button_comprar" type="submit">Comprar</button>
+                      </a>
+
+                      <button type="submit" id="buttonCarrinho">Detalhes</button>
+
+                      
+
+                    </div>
+        
+                <% }) %>
+        
+              </section>
+        
+         
+        <!-- fim primeiro block de imagens---------------------------------------------------------------------------->
+        
+        </main>
+        
+        <%- include("../partials/footer") %>
+        
+           <!--<div class="whatsapp">
+          <p>Duvidas ?</p>
+          <a target="_blank" href="https://wa.me/+5511966471637?text=Olá tudo bem ? "><i id="whats" class="fa-brands fa-whatsapp-square"></i></a>
+          </div>-->
+        
+        <script src="/js/farmacia.js"></script>
+        <script src="/js/menu_hamburguer.js"></script>
+        
+        </body>
+        
+        
+        </html>
+        
+        
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb

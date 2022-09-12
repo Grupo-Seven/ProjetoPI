@@ -16,7 +16,11 @@ const controleProdutos = {
     
     })
 
+<<<<<<< HEAD
     return res.render("area_compras_farmacia" ,{produtoDetalhe} );
+=======
+    return res.render("area_compras_farmacia" ,{produtoDetalhe});
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
   },
 // farmacia fim -----------------------------------------------------------------------------------------////////
 
@@ -33,7 +37,11 @@ const controleProdutos = {
 
     })
 
+<<<<<<< HEAD
     return res.render("area_compras_variedades");
+=======
+    return res.render("area_compras_variedades", {produtoDetalhe});
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
   },
  //variedades fim -------------------------------------------------------------------------------------////////
 
@@ -52,10 +60,19 @@ const controleProdutos = {
     return res.render("area_compras_pet" ,{produtoDetalhe} );
   },
 // pet fim -------------------------------------------------------------------------------------------////////
+<<<<<<< HEAD
 inserirProduto:(req, res) =>{
   res.render("produtoCriar")
 }
 }
 
+=======
+
+formulario:(req,res) =>{
+  
+  return res.render("produtoCriar");
+},
+}
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 
 module.exports = controleProdutos;

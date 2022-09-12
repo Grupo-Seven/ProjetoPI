@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+.containerDuvidas{
+    width: 90%;
+    margin: 5%;
+    padding: 2%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #eca7a7;
+    border-radius: 10px;
+}
+
+.duvidasParagraph{
+    padding: 2%;
+    margin: 15px;
+    padding-bottom: 4%;
+    border: red solid 1.2px;
+    background-color: rgb(247, 243, 180);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+    transition: background-color 1000ms;
+    transition-delay:all 100000s;
+}
+
+.duvidasParagraph:hover{
+    background-color: rgb(247, 180, 185);
+    border:solid 2px rgb(238, 9, 9);
+}
+
+.doubts{
+    text-align: center;
+    margin-top: 70px;
+}

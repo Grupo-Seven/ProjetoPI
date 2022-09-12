@@ -11,5 +11,4 @@ router.get("/area_compras_pet/:item",controleProdutos.detalhesPet);
 
 // inicio detalhes do produto por id ------------------------------------------------------------///////
 
-
 module.exports = router;

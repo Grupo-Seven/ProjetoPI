@@ -9,8 +9,13 @@
 		<link rel="stylesheet" href="/css/header.css">
 		<link rel="stylesheet" href="/css/body_pet.css">
 		<link rel="stylesheet" href="/css/footer.css">
+<<<<<<< HEAD
 		<link rel="stylesheet" href="/css/produtoCriar.css">
 
+=======
+		<link rel="stylesheet" href="/css/menu_hamburguer.css">
+		<link rel="stylesheet" href="/css/produtoCriar.css">
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 		
 	
 	</head>
@@ -19,9 +24,15 @@
 	<%- include('../partials/header') %>
 	<!-- /Header -->
 
+<<<<<<< HEAD
 	<div class="col-11">
 		<div class="row">
 			<div class="">
+=======
+	<div class="container-criacao">
+		<div class="row">
+			<div class="col-12">
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 				<h2 class="produtos-title">Formulário do produto</h2>
 			</div>
 		</div>
@@ -29,6 +40,7 @@
 			<form action="/produtos/criar" method="POST" enctype="multipart/form-data">
 					<div class="col-12 col-md-6">
 						<label for="name" class="form-label">Nome do produto:</label>
+<<<<<<< HEAD
 						<input type="text" id="name" name="description" placeholder="Ex: Ração para gatos" class="form-input">
 					</div>
 					<div class="col-12 col-md-6">
@@ -38,6 +50,17 @@
 					<div class="col-12 col-md-6">
 							<label for="category" class="form-label">Setor:</label>
                 <input class="form-control" name="sector" list="datalistOptions" id="exampleDataList" placeholder="Categotia do produto">
+=======
+						<input type="text" id="name" name="allProdutos" placeholder="Ex: Ração para gatos" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="price" class="form-label">Preço do produto:</label>
+						<input type="text" id="price" name="price" placeholder="Ex: 1478" class="form-input">
+					</div>
+					<div class="col-12 col-md-6">
+							<label for="category" class="form-label">Setor:</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Categotia do produto">
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
            <datalist id="datalistOptions">
                   <option value="Variedades">
                   <option value="Pet">
@@ -48,7 +71,11 @@
 					</div>
 					<div class="col-12">
 						<label for="description" class="form-label">Descrição:</label>
+<<<<<<< HEAD
 						<textarea name="texto" id="description" class="form-input"></textarea>
+=======
+						<textarea name="description" id="description" class="form-input"></textarea>
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 					</div>
 					<div class="col-12">
 						<label class="form-label" for="image">Imagem do produto:</label>

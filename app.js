@@ -7,11 +7,19 @@ const express = require("express");
 const app = express();
 const methodOverride = require("method-override");// const pra habilitar os metodos put e delete
 const session = require("express-session");
+<<<<<<< HEAD
+=======
+//const validaLoginClienteCookies = require("./src/middlewares/validaLoginClienteCookies");
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 const RotaPaginas = require("./src/routes/routerPaginas");
 const RotaProdutos = require("./src/routes/routerProdutos");
+<<<<<<< HEAD
+=======
+const RotaUsuarios = require("./src/routes/routerUsuarios");
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 
@@ -23,14 +31,23 @@ app.set("view engine","ejs"); // informa ao servidor que será utilizado o ejs.
 
 app.use(session({
   secret:"seguranca dos dados  grupo seven",
+<<<<<<< HEAD
   resave:true,
   saveUninitialized:true
+=======
+  resave:false,
+  saveUninitialized:false
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 }))
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+<<<<<<< HEAD
+=======
+//app.use(validaLoginClienteCookies);
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e delete
 
@@ -38,6 +55,10 @@ app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e del
 app.use("/",RotaPaginas);
 app.use("/produtos",RotaProdutos);
 app.use("/criar",RotaProdutos);
+<<<<<<< HEAD
+=======
+app.use("/usuarios",RotaUsuarios);
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///

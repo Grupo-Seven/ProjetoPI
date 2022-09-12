@@ -9,11 +9,16 @@
   <link rel="stylesheet" href="/css/menu_hamburguer.css">
   <link rel="stylesheet" href="/css/area_compras_header.css">
   <link rel="stylesheet" href="/css/area_compras.css">
+<<<<<<< HEAD
+=======
+  <link rel="stylesheet" href="/css/footer.css">
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 
 </head>
 
 <body>
 
+<<<<<<< HEAD
   <header>
 
     <section class="primeiro_cabecalho">
@@ -93,6 +98,9 @@
 
   
   </header>
+=======
+<%- include ("../partials/header") %> 
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 
  <section class="body_menu_hamburguer" ></section>
   <div class="menu_hamburguer" id="menu_hamburguer">
@@ -133,6 +141,7 @@
             <!-- Inicio Primeiro Artico  de Imagens---------------------------------------------------------------------------->  
         
           <article class="Primeiro_Artico_Compras">
+<<<<<<< HEAD
               <div class="Primeiro_Bloco_Superior"><img src="/img/<%= //produtoDetalhe2.image %>" alt="img variedades">
               </div>
 
@@ -140,6 +149,15 @@
                   <img src="/img/<%= //produtoDetalhe2.image %>" alt="img variedades">
                   <img src="/img/<%=// produtoDetalhe2.image %>" alt="img variedades">
                   <img src="/img/<%=// produtoDetalhe2.image %>" alt="img variedades">
+=======
+              <div class="Primeiro_Bloco_Superior"><img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
+              </div>
+
+              <div class="Segundo_Bloco">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
               </div>
           </article>
 
@@ -150,7 +168,11 @@
           <article class="Segundo_Artico_Compras">
             <div class="Text">
               <h3>Descrição do produto :</h3>
+<<<<<<< HEAD
               <p><%= //produtoDetalhe2.texto %></p>
+=======
+              <p><%= produtoDetalhe.texto %></p>
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
             </div>
 
           </article>
@@ -162,8 +184,13 @@
           <article class="Terceiro_Artico_Compras">
             <div>
               <i class="fa-solid fa-basket-shopping"></i>
+<<<<<<< HEAD
               <h3><%=// produtoDetalhe2.description %></h3>
               <p>R$ <%= //produtoDetalhe2.price %></p>
+=======
+              <h3><%= produtoDetalhe.description %></h3>
+              <p>R$ <%= produtoDetalhe.price %></p>
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
               <button type="submit">Comprar</button>
 
             </div>
@@ -177,9 +204,13 @@
   
  </section> 
 
+<<<<<<< HEAD
 
 <%- include("../partials/footer") %> 
    
+=======
+ <%- include ("../partials/footer") %> 
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 
 </body>
 

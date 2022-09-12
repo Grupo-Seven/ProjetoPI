@@ -7,5 +7,46 @@
   "password": "7777777",
   "passwordConfirmation": "7777777",
   "id": 1
+<<<<<<< HEAD
+=======
+ },
+ {
+  "username": "Everton",
+  "email": "alxnvn@gmail.com",
+  "CNPJ": "00346019000194",
+  "telefone": "11966471637",
+  "password": "111111",
+  "passwordConfirmation": "111111",
+  "id": 2
+
+ },
+ {
+  "username": "doug",
+  "email": "douglashiuga2@gmail.com",
+  "CNPJ": "00009134567829",
+  "telefone": "61995678213",
+  "password": "1234567",
+  "passwordConfirmation": "1234567",
+  "id": 3
+ },
+ {
+  "username": "dferreirabat@gmail.com",
+  "email": "douglashiuga2@gmail.com",
+  "CNPJ": "03959967821",
+  "telefone": "61995678213",
+  "password": "12345678",
+  "passwordConfirmation": "12345678",
+  "id": 4
+ },
+ {
+  "username": "dferreirabat@gmail.com",
+  "email": "douglashiuga2@gmail.com",
+  "CNPJ": "03959967821",
+  "telefone": "61995678213",
+  "password": "12345678",
+  "passwordConfirmation": "12345678",
+  "id": 5
+
+>>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
  }
 ]

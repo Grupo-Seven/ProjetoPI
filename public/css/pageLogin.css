@@ -21,7 +21,11 @@
   height: 350px;
 =======
   height: 370px;
+<<<<<<< HEAD
 >>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
+=======
+>>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
+>>>>>>> Develop
   margin-top: 10%;
   margin-bottom: 10%;
   border-radius: 5px;
@@ -84,7 +88,11 @@
 .p_validation{
   color: #f71212;
 }
+<<<<<<< HEAD
 >>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
+=======
+>>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
+>>>>>>> Develop
 
 @media (max-width:1500px) and (min-width:1076px) {
   .main_login{
@@ -132,7 +140,11 @@
 .block_form1 ,
 .block_form2 {
   height: 490px;
+<<<<<<< HEAD
 >>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
+=======
+>>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
+>>>>>>> Develop
 }
 
 .block_form1 h3,

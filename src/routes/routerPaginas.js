@@ -13,7 +13,7 @@ router.get("/farmacia",controlePaginas.farmacia);
 router.get("/pet",controlePaginas.pet);
 router.get("/variedades",controlePaginas.variedades);
 router.get("/",controlePaginas.home);
-// router.get("/duvidas",controlePaginas.duvidas);
+router.get("/duvidas",controlePaginas.duvidas);
 
 
 
@@ -29,22 +29,12 @@ router.get("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioE
 router.put("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioUpdateEmpresas);
 router.delete("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioDeleteEmpresas);
 
-//-------------------------------------------------------------------------------------------------------------/////
-router.get("/formulario",controleUsuarios.formulario);
-router.post("/formulario", validations ,controleUsuarios.armazenar);
-
-router.get("/formularioEdit/:cpf" ,controleUsuarios.formularioEdit);
-router.put("/formularioEdit/:cpf" ,controleUsuarios.formularioUpdate);
-router.delete("/formularioEdit/:cpf" ,controleUsuarios.formularioDelete);
-
 // fim  formulario------------------------------------------------------------------------------------------/////
 
-// formulario de criaçao de produtos
+//formulario de criaçao de produtos
 router.get("/criarProduto",controleProdutos.formulario);
 // router.post("/criarProduto",controleProdutos);
 
-
-// router.get("/descricao",controleProdutos.formulario);
-
 module.exports = router;
+
 

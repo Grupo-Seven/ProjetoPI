@@ -1,5 +1,4 @@
 var express = require('express');
-const controlePaginas = require('../controllers/controllersPaginas');
 var router = express.Router();
 var controleProdutos = require("../controllers/controllersProdutos");
 

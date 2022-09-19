@@ -29,7 +29,11 @@ header{
 }
 
 .imagem_logo  {
+<<<<<<< HEAD
   width: 10%;
+=======
+  max-width: 10%;
+>>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
   margin-right: 10%;
 
 }

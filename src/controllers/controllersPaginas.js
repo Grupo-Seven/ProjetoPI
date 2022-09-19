@@ -1,4 +1,7 @@
 const  todosProdutos = require("../models/produto");
+const  todosUsuarios = require("../models/usuariosModels");
+const {validationResult} = require("express-validator");
+const bcrypt = require("bcryptjs");
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
@@ -26,6 +29,10 @@ const controlePaginas = {
   return res.render("farmacia",{productsFarmacia , productsFarmacia2, toThousand});
 },
 // farmacia fim ----------------------------------------------------------------------------------------////////
+
+
+
+// variedades inicio -----------------------------------------------------------------------------------////////
 
 
 // pet inicio -------------------------------------------------------------------------------------////////
@@ -79,12 +86,18 @@ const controlePaginas = {
  },
 
  login:(req,res) => {
-
+  //console.log(req.cookies.teste);
   return res.render("landingPageLogin");
  },
 
 
+ duvidas:(req,res) => {
+  //console.log(req.cookies.teste);
+  return res.render("duvidas");
+ },
+
 };
+
 
 module.exports = controlePaginas;
 

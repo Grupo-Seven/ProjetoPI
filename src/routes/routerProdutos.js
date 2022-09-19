@@ -1,5 +1,4 @@
 var express = require('express');
-const controlePaginas = require('../controllers/controllersPaginas');
 var router = express.Router();
 var controleProdutos = require("../controllers/controllersProdutos");
 
@@ -10,6 +9,5 @@ router.get("/area_compras_variedades/:item",controleProdutos.detalhesVariedades)
 router.get("/area_compras_pet/:item",controleProdutos.detalhesPet);
 
 // inicio detalhes do produto por id ------------------------------------------------------------///////
-
 
 module.exports = router;

@@ -1,7 +1,7 @@
 const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
-
+const {Usuario} = require("../models");
 
 
 const controleUsuarios = {
@@ -127,8 +127,15 @@ const controleUsuarios = {
     res.clearCookie("emailUsuario");
     req.session.destroy();
     res.redirect("/");
+  },
+
+
+  // método de busca do banco de dados
+  index:async (req,res)=>{
+    let users = await Usuario.findAll()
   }
   
 }
+
 module.exports = controleUsuarios;
 

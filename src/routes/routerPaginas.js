@@ -6,28 +6,19 @@ const controleUsuariosEmpresas = require("../controllers/controllersUsuariosEmpr
 const validations = require("../middlewares/validaFormulario");
 const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
 var  controleProdutos = require("../controllers/controllersProdutos");
-<<<<<<< HEAD
-
-
-=======
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
 router.get("/login",validaLoginCliente,controlePaginas.login);
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 router.get("/farmacia",controlePaginas.farmacia);
 router.get("/pet",controlePaginas.pet);
 router.get("/variedades",controlePaginas.variedades);
 router.get("/",controlePaginas.home);
-<<<<<<< HEAD
-router.get("/login",controlePaginas.login);
-=======
-router.get("/duvidas",controlePaginas.duvidas);
+// router.get("/duvidas",controlePaginas.duvidas);
 
 
 
 //router.post("/loginEmpresa",controlePaginas.loginValidation);
 
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
 
 
 // inicio formulario-----------------------------------------------------------------------------------------/////
@@ -38,7 +29,6 @@ router.get("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioE
 router.put("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioUpdateEmpresas);
 router.delete("/formularioEmpresasEdit/:CNPJ" ,controleUsuariosEmpresas.formularioDeleteEmpresas);
 
-<<<<<<< HEAD
 //-------------------------------------------------------------------------------------------------------------/////
 router.get("/formulario",controleUsuarios.formulario);
 router.post("/formulario", validations ,controleUsuarios.armazenar);
@@ -49,8 +39,8 @@ router.delete("/formularioEdit/:cpf" ,controleUsuarios.formularioDelete);
 
 // fim  formulario------------------------------------------------------------------------------------------/////
 
-//formulario de criaçao de produtos
-// router.get("/criarProduto",controleProdutos.formulario);
+// formulario de criaçao de produtos
+router.get("/criarProduto",controleProdutos.formulario);
 // router.post("/criarProduto",controleProdutos);
 
 
@@ -58,14 +48,3 @@ router.delete("/formularioEdit/:cpf" ,controleUsuarios.formularioDelete);
 
 module.exports = router;
 
-=======
-// fim  formulario------------------------------------------------------------------------------------------/////
-
-//formulario de criaçao de produtos
-router.get("/criarProduto",controleProdutos.formulario);
-// router.post("/criarProduto",controleProdutos);
-
-module.exports = router;
-
-
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb

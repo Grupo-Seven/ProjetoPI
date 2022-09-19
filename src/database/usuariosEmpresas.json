@@ -7,8 +7,6 @@
   "password": "7777777",
   "passwordConfirmation": "7777777",
   "id": 1
-<<<<<<< HEAD
-=======
  },
  {
   "username": "Everton",
@@ -47,6 +45,5 @@
   "passwordConfirmation": "12345678",
   "id": 5
 
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
  }
 ]

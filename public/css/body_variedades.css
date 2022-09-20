@@ -11,13 +11,10 @@ body{
     border-top-right-radius: 10px;
 }
 
-<<<<<<< HEAD
-=======
 p{
     margin-top: 15px;
 }
 
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
 .produtcts{
     flex-direction: column;
     display: flex;
@@ -35,22 +32,16 @@ p{
     flex-wrap: wrap;
     background-color: #eca7a7;
     border-radius: 10px;
-<<<<<<< HEAD
-=======
 
     text-align: center;
 
 
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
 }
 
 .products1 div{
     display: inline-block;
     margin: 15px;
-<<<<<<< HEAD
-=======
     padding: 10px;
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
     width: 340px;
     height: 510px;
     justify-content: center;
@@ -76,10 +67,6 @@ p{
 .products1 button{
     display: inline-block;
     margin-top: 6%;
-<<<<<<< HEAD
-    margin-left: 19%;
-=======
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
     padding: 2%;
     background-color: rgb(86, 92, 94);
     border: none;
@@ -88,11 +75,8 @@ p{
     color: white;
     border: 0.7px solid white;
     font-weight: bold;
-<<<<<<< HEAD
-=======
     align-items: center;
 
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
 }
 
 #buttonCarrinho{

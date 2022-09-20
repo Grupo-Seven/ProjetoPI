@@ -74,10 +74,17 @@
 .p_senha{
   margin-top: 3%;
 }
+<<<<<<< HEAD
 
 .p_validation{
   color: #f71212;
 }
+=======
+.p_validation{
+  color: #f71212;
+}
+
+>>>>>>> Ayrton
 
 @media (max-width:1500px) and (min-width:1076px) {
   .main_login{
@@ -117,6 +124,10 @@
     height: 800px;
   }
 
+<<<<<<< HEAD
+=======
+  
+>>>>>>> Ayrton
   .block_form1 ,
 .block_form2 {
   height: 470px;

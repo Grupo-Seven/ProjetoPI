@@ -59,4 +59,11 @@ formulario:(req,res) =>{
 },
 }
 
+
+formulario:(req,res) =>{
+  
+  return res.render("produtoCriar");
+},
+
+
 module.exports = controleProdutos;

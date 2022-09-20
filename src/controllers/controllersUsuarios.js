@@ -1,7 +1,7 @@
 const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
-const {Usuario} = require("../models");
+const {Usuario} = require("../../models");
 
 
 const controleUsuarios = {

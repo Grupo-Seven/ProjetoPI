@@ -11,17 +11,11 @@ body{
     border-top-right-radius: 10px;
 }
 
-<<<<<<< HEAD
-=======
+
 p{
     margin-top: 15px;
 }
 
-<<<<<<< HEAD
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
-=======
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
->>>>>>> Develop
 .produtcts{
     flex-direction: column;
     display: flex;
@@ -39,30 +33,13 @@ p{
     flex-wrap: wrap;
     background-color: #eca7a7;
     border-radius: 10px;
-<<<<<<< HEAD
-=======
-
     text-align: center;
-
-
-<<<<<<< HEAD
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
-=======
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
->>>>>>> Develop
 }
 
 .products1 div{
     display: inline-block;
     margin: 15px;
-<<<<<<< HEAD
-=======
     padding: 10px;
-<<<<<<< HEAD
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
-=======
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
->>>>>>> Develop
     width: 340px;
     height: 510px;
     justify-content: center;
@@ -88,14 +65,7 @@ p{
 .products1 button{
     display: inline-block;
     margin-top: 6%;
-<<<<<<< HEAD
     margin-left: 19%;
-=======
-<<<<<<< HEAD
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
-=======
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
->>>>>>> Develop
     padding: 2%;
     background-color: rgb(86, 92, 94);
     border: none;
@@ -104,15 +74,8 @@ p{
     color: white;
     border: 0.7px solid white;
     font-weight: bold;
-<<<<<<< HEAD
-=======
     align-items: center;
 
-<<<<<<< HEAD
->>>>>>> 27383bd5925ee642e82e1e64af23a9a2208299fb
-=======
->>>>>>> 1396d24b4e3aa841a005a7545c6d62cb18105ee8
->>>>>>> Develop
 }
 
 #buttonCarrinho{

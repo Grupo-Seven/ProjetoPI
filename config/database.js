@@ -1,9 +1,11 @@
 const config = {
-  username : "root",
+  development: {
+    username : "root",
   password : "",
   database : "mysql",
   host : "localhost",
-  dialect : "mysql",
+  dialect : "mysql"
+  }
 };
 
 module.exports = config;

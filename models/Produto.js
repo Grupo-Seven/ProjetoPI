@@ -1,78 +1,31 @@
 module.exports = (sequelize, DataType)=>{
-<<<<<<< HEAD
-    const produto = sequelize.define("Produto")
-=======
     const produto = sequelize.define("Produto", {
-        timeStamps: false,
-        
+               
         id_produtos:{
-            type: DataType.INTERGER,
+            type: DataType.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         setor_produtos:{
-            type: DataType.ENUM //do tipo string permitido a partir de uma lista de valores permitidos, conforme o arquivo .sql
+            type: DataType.ENUM('variedades', 'pet', 'farmacia') //do tipo string permitido a partir de uma lista de valores permitidos, conforme o arquivo .sql
         },
         descricao_produtos:{
             type: DataType.STRING,
-            primaryKey: true,
-            autoIncrement: true
+            primaryKey: true
         },
         price_produtos:{
             type: DataType.DECIMAL,
             primaryKey: true,
         },
-        texto_produtos: Datatype.TEXT,
-
-        marca_produtos: DataType.TINYTEXT
-    })
-
-    const comprador = sequelize.define("Comprador", {
-        tableName: "comprador",
-        timeStamps: false,
-
-        id_comprador:{
-            type: DataType.INTERGER,
-            primaryKey: true,
-            autoIncrement: true
+        texto_produtos: {
+           type:DataType.TEXT
         },
-        email_comprador:{
-            type: DataType.STRING,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true
-        },
-        senha_comprador:{
-            password:{
-                type: 'VARBINARY(50)',
-              },
-            primaryKey: true,
+
+        marca_produtos:{
+            type: DataType.TEXT
         }
     })
 
-    const anunciantes = sequelize.define("Anunciantes", {
-        timeStamps: false,
-        
-        id_anunciantes:{
-            type: DataType.INTERGER,
-            primaryKey: true,
-            autoIncrement: true
-        },
-        email_anunciantes:{
-            type: DataType.STRING,
-            primaryKey: true,
-            autoIncrement: true
-        },
-        senha_anunciantes:{
-            password:{
-                type: 'VARBINARY(50)',
-              },
-            primaryKey: true,
-        }
-    })
+      return produto
 
-    return produto
-    return comprador
-    return anunciantes
->>>>>>> Develop
 }

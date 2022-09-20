@@ -52,12 +52,6 @@ const controleProdutos = {
     return res.render("area_compras_pet" ,{produtoDetalhe} );
   },
 // pet fim -------------------------------------------------------------------------------------------////////
-<<<<<<< HEAD
-inserirProduto:(req, res) =>{
-  res.render("produtoCriar")
-},
-=======
->>>>>>> Develop
 
 formulario:(req,res) =>{
   
@@ -70,6 +64,6 @@ formulario:(req,res) =>{
   
   return res.render("produtoCriar");
 },
-}
+
 
 module.exports = controleProdutos;

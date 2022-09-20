@@ -86,10 +86,7 @@ const controlePaginas = {
  },
 
  login:(req,res) => {
-<<<<<<< HEAD
-=======
   //console.log(req.cookies.teste);
->>>>>>> Develop
   return res.render("landingPageLogin");
  },
 

@@ -1,7 +1,11 @@
 const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
+<<<<<<< HEAD
 const {Usuario} = require("../../models");
+=======
+const {Usuario} = require("/Users/PC/DH/Grupo_Seven/models")
+>>>>>>> ed6134fb37f67ac83547886402fbcaea52bf97e9
 
 
 const controleUsuarios = {
@@ -51,8 +55,6 @@ const controleUsuarios = {
       });
 
      }
-
-
      
      let senhaCripto = {
        ...req.body,
@@ -132,9 +134,9 @@ const controleUsuarios = {
 
   // método de busca do banco de dados
   index:async (req,res)=>{
-    let users = await Usuario.findAll()
+    let users = await Produto.findAll()
+    console.log(users)
   }
-  
 }
 
 module.exports = controleUsuarios;

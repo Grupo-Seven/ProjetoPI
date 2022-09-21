@@ -1,26 +1,21 @@
 module.exports = (sequelize, DataType)=>{
-    const Comprador = sequelize.define("Comprador", {
+const Anunciantes = sequelize.define("Anunciantes", {
+    timeStamps: false,
     
-    id_comprador:{
+    id_anunciantes:{
         type: DataType.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    email_comprador:{
+    email_anunciantes:{
         type: DataType.STRING,
-        allowNull: false,
         primaryKey: true,
     },
-    senha_comprador:{
+    senha_anunciantes:{
         type: DataType.STRING,
+          
         primaryKey: true,
     }
-},{
-    //configuraçoes ficam na parte debaixo
-    tableName: "comprador", 
-    timestamps: false
-
 })
-
-    return Comprador
+    return Anunciantes
 }

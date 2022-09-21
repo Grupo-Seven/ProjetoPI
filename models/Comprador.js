@@ -1,6 +1,5 @@
 module.exports = (sequelize, DataType)=>{
     const Comprador = sequelize.define("Comprador", {
-    
     id_comprador:{
         type: DataType.INTEGER,
         primaryKey: true,

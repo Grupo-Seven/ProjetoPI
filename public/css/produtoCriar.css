@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+=======
+
+.body{
+  background-color: #e2abab;
+  justify-content: space-around;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2abab;
+}
+.col-12{
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  background-color: #e2abab;
+}
+
+
+>>>>>>> Ayrton
 *{
     margin: 0;
     padding:0 ;

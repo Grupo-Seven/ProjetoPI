@@ -11,6 +11,10 @@ body{
     border-top-right-radius: 10px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Ayrton
 p{
     margin-top: 15px;
 }
@@ -32,10 +36,14 @@ p{
     flex-wrap: wrap;
     background-color: #eca7a7;
     border-radius: 10px;
+<<<<<<< HEAD
 
     text-align: center;
 
 
+=======
+    text-align: center;
+>>>>>>> Ayrton
 }
 
 .products1 div{
@@ -67,6 +75,10 @@ p{
 .products1 button{
     display: inline-block;
     margin-top: 6%;
+<<<<<<< HEAD
+=======
+    margin-left: 19%;
+>>>>>>> Ayrton
     padding: 2%;
     background-color: rgb(86, 92, 94);
     border: none;

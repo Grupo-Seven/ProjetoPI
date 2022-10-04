@@ -11,6 +11,17 @@ body{
     border-top-right-radius: 10px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> Ayrton
+p{
+    margin-top: 15px;
+}
+
+>>>>>>> 68eb29c9a1f1ac8343bb17bc32ca91cdf28ad0cf
 .produtcts{
     flex-direction: column;
     display: flex;
@@ -29,7 +40,18 @@ body{
     flex-wrap: wrap;
     background-color: #592B92;
     border-radius: 10px;
+<<<<<<< HEAD
     text-align: center;
+=======
+<<<<<<< HEAD
+
+    text-align: center;
+
+
+=======
+    text-align: center;
+>>>>>>> Ayrton
+>>>>>>> 68eb29c9a1f1ac8343bb17bc32ca91cdf28ad0cf
 }
 
 .products1 div{
@@ -61,6 +83,10 @@ body{
 .products1 button{
     display: inline-block;
     margin-top: 6%;
+<<<<<<< HEAD
+=======
+    margin-left: 19%;
+>>>>>>> Ayrton
     padding: 2%;
     background-color: #3AC0CC;
     border: none;

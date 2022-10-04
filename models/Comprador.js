@@ -1,8 +1,5 @@
 module.exports = (sequelize, DataType)=>{
     const Comprador = sequelize.define("Comprador", {
-    tableName: "comprador",
-    timeStamps: false,
-
     id_comprador:{
         type: DataType.INTEGER,
         primaryKey: true,
@@ -17,6 +14,11 @@ module.exports = (sequelize, DataType)=>{
         type: DataType.STRING,
         primaryKey: true,
     }
+},{
+    //configuraçoes ficam na parte debaixo
+    tableName: "comprador", 
+    timestamps: false
+
 })
 
     return Comprador

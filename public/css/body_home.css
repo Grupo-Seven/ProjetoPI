@@ -5,7 +5,7 @@
   } /* zera todas as configurações padroes do html */
   
   .cabecalho_imagens{
-    background: linear-gradient(90deg, #e40a0a 0%, #e96c74 100%);
+    background: linear-gradient(90deg, #592B92 0%, rgb(232 249 248) 100%);
     margin-top: -15%;
     padding-top:1% ;
     padding-bottom: 1%;
@@ -23,20 +23,14 @@
   }
   
   .cabecalho_imagens  div p { 
-    color: white;
+    color: rgb(232 249 248);
     font-weight: 700;
     font-size: 125%;
    
   }
   
-  .cabecalho_imagens div i{ 
-    color: white;
-    font-weight: 700;
-  }
-  
-  
   .cabecalho_imagens2{
-    background: linear-gradient(90deg, #e40a0a 0%, #e96c74 100%);
+    background: linear-gradient(90deg,  #592B92 0%, rgb(232 249 248) 100%);
     margin-top: 0%;
     padding-top:1% ;
     padding-bottom: 1%;
@@ -66,11 +60,8 @@
   
   }
   
-  
-  
-  
   .cabecalho_imagens3{
-    background: linear-gradient(90deg, #e40a0a 0%, #e96c74 100%);
+    background: linear-gradient(90deg,  #592B92 0%, rgb(232 249 248) 100%);
     margin-top: 0%;
     padding-top:1% ;
     padding-bottom: 1%;
@@ -107,7 +98,7 @@
   .elementoDois_article,
   .elementoTres_article {
     display: flex;
-    background-color: #f39595;
+    background-color: #592B92;
     margin-top: 0%;
     padding-top: 2%;
     padding-bottom: 2%;

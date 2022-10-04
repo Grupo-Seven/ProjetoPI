@@ -11,14 +11,10 @@ body{
     border-top-right-radius: 10px;
 }
 
-p{
-    margin-top: 15px;
-}
-
 .produtcts{
     flex-direction: column;
     display: flex;
-    background-color: rgb(247, 243, 180);    
+    background-color: rgb(236, 231, 230);   
 }
 
 /* ============================ INÍCIO PRODUCTS 1 ============================ */
@@ -26,16 +22,14 @@ p{
     display: flex;
     width: 90%;
     margin: 5%;
+    margin-top: -12%;
     padding-top: 2%;
     padding-bottom: 2%;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #eca7a7;
+    background-color: #592B92;
     border-radius: 10px;
-
     text-align: center;
-
-
 }
 
 .products1 div{
@@ -46,7 +40,7 @@ p{
     height: 510px;
     justify-content: center;
 
-    background-color: rgb(247, 243, 180);
+    background-color: rgb(235, 236, 230);
     box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
     border-radius: 10px;
     transition: background-color 1000ms;
@@ -54,8 +48,8 @@ p{
 }
 
 .products1 div:hover{
-    background-color: rgb(247, 180, 185);
-    border:solid 2px rgb(238, 9, 9);
+    background-color: #c0add8;
+    border:solid 2px #592B92;
 }
 
 .products1 button:hover{
@@ -68,7 +62,7 @@ p{
     display: inline-block;
     margin-top: 6%;
     padding: 2%;
-    background-color: rgb(86, 92, 94);
+    background-color: #3AC0CC;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -76,11 +70,10 @@ p{
     border: 0.7px solid white;
     font-weight: bold;
     align-items: center;
-
 }
 
 #buttonCarrinho{
-    background-color: rgb(59, 92, 79);
+    background-color: #592B92;
 }
 /* ============================ FIM PRODUCTS 1 ============================ */
 
@@ -112,8 +105,8 @@ p{
 }
 
 .products2 div:hover{
-    background-color: rgb(247, 180, 185);
-    border:solid 2px rgb(238, 9, 9);
+    background-color: #c0add8;
+    border:solid 2px #592B92;
 }
 
 .products2 button:hover{
@@ -155,7 +148,7 @@ p{
     .products1 div{
         flex-direction: column;
         width: 80%;
-        margin-top:3%;
+        margin-top: 200%;
         margin-bottom: 7%;
     }
   

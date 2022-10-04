@@ -1,7 +1,7 @@
 const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
-const {Usuario} = require("/Users/PC/DH/Grupo_Seven/models")
+const {Usuario} = require("../../models")
 
 
 const controleUsuarios = {
@@ -128,7 +128,9 @@ const controleUsuarios = {
   },
 
 
-  // método de busca do banco de dados
+  // a partir daqui, método de busca do banco de dados
+
+  // como os métodos de função de busca são assíncronos usamos async/await
   index:async (req,res)=>{
     let users = await Produto.findAll()
     console.log(users)

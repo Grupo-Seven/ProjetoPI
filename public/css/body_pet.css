@@ -130,7 +130,7 @@ main{
 .container{
   display: flex;
   justify-content: space-around;
-  background-color: #e2abab;
+  background-color: #592B92;
   padding-top:2% ;
   padding-bottom: 2%;
   border-radius: 10px;
@@ -142,40 +142,40 @@ main{
 .card{
 	color: black;
 	text-align: center;
-  cursor: pointer;
-  border: 1px solid #c23939; 
-  background-color: #ffffff;
-  padding-bottom: 2%;
+  padding: .7%;
   width: 30%;
-  box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
   border-radius: 10px;
   transition: background-color 1000ms;
   transition-delay:all 100000s;
-  background-color: rgb(247, 243, 180);
+  background-color: rgb(235, 236, 230);
+
 }
 .card img{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .card:hover{
-  box-shadow: 0px 1px 20px #a81e1e ;
-  background-color: rgb(247, 180, 185);
-  border:solid 2px rgb(238, 9, 9);
+  background-color: #c0add8;
+  border:solid 2px #592B92;
 }
+
 .descricao{
   margin: 4.5% 0%;
-
 }
 .comprar{
+  display: inline-block;
+  margin-top: 6%;
   padding: 2%;
-  background-color: rgb(86, 92, 94);
+  background-color: #3AC0CC;
   border: none;
   border-radius: 5px;
-  cursor: grabbing;
+  cursor: pointer;
   color: white;
   border: 0.7px solid white;
   font-weight: bold;
+  align-items: center;
 }
+
 .comprar:hover{
   background-color: white;
   color: rgb(86, 92, 94);
@@ -183,14 +183,17 @@ main{
 }
 
 .carrinho{
+  display: inline-block;
+  margin-top: 6%;
   padding: 2%;
-  background-color: rgb(59, 92, 79);
+  background-color: #592B92;
   border: none;
   border-radius: 5px;
-  cursor: grabbing;
+  cursor: pointer;
   color: white;
   border: 0.7px solid white;
   font-weight: bold;
+  align-items: center;
 }
 .carrinho:hover{
   background-color: white;

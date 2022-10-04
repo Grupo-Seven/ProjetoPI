@@ -13,7 +13,6 @@ main{
   
 }
 
-
 .slider{
   margin: 0 auto;
   width: 100%;
@@ -24,7 +23,6 @@ main{
 .slides{
   width: 400%;
   display:flex;
-
 }
 
 .slides input{
@@ -38,6 +36,8 @@ main{
 }
 
 .slide img{
+  margin-top: 9px;
+  padding: 0;
   width: 100%;
   height: 57%;
 
@@ -52,7 +52,7 @@ main{
 }
 
 .label_btn{
-  border: 2px solid rgb(237, 35, 35);
+  border: 2px solid #592B92;
   padding: 0.42%;
   border-radius: 10px;
   cursor: pointer;
@@ -65,31 +65,28 @@ main{
 }
 
 .label_btn:hover{
-  background-color: rgb(237, 35, 35);
+  background-color: #592B92;
 }
 
 #radio1:checked ~ .first{
   margin-left: 0%;
-
 }
 
 #radio2:checked ~ .first{
   margin-left: -25%;
-
 }
 
 #radio3:checked ~ .first{
   margin-left: -50%;
-
 }
 
 #radio4:checked ~ .first{
   margin-left: -75%;
-
 }
 
 .nav_auto div {
-  border: 2px solid rgb(237, 35, 35);
+  margin-top: 9px;
+  border: 2px solid #592B92;
   padding: 0.42%;
   border-radius: 10px;
   transition: 1s;
@@ -110,50 +107,66 @@ main{
 }
 
 #radio1:checked ~ .nav_auto .auto_btn1{
-  background-color: rgb(237, 35, 35);
+  background-color: #592B92;
 }
 
 #radio2:checked ~ .nav_auto .auto_btn2{
-  background-color: rgb(237, 35, 35);
+  background-color: #592B92;
 }
 
 #radio3:checked ~ .nav_auto .auto_btn3{
-  background-color: rgb(237, 35, 35);
+  background-color: #592B92;
 }
 
 #radio4:checked ~ .nav_auto .auto_btn4{
-  background-color: rgb(237, 35, 35);
+  background-color: #592B92;
 }
 
-@media  (max-width:741px){
-
-  .slide{
-    width: 25%;
-    height: 26vh;
-   /* position: relative;*/
+@media (max-width:794px){
+ 
+  .slide img{
+    margin-top: 17%;
+    max-width: 100%;
+    height: 50%;
     transition: 2s;
   }
- 
+
   .nav_auto div {
     display: none;
-  
   }
 
   .label_nav{
     display: none;
   }
 
-  main{
-    margin-top: 155px;
-    
-  }
 }
 
-@media (max-width:795px) and (min-width:742px){
+@media  (max-width:741px){
+
+  .slide img{
+    margin-top: 20%;
+    max-width: 100%;
+    height: 50%;
+    transition: 2s;
+  }
  
-  main{
-    margin-top: 155px;
-    
+  .nav_auto div {
+    display: none;
+  }
+
+  .label_nav{
+    display: none;
+  }
+
+}
+
+@media (max-width:550px){
+ 
+  .slide img{
+    margin-top: 25%;
+    max-width: 100%;
+    height: 50%;
+    transition: 2s;
   }
 
 }

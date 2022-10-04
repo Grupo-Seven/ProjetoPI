@@ -2,7 +2,7 @@ footer{
   margin-top: 3%;
   padding-top: 3%;
   padding-bottom: 3%;
-  background-color: rgb(213, 33, 33);
+  background-color: rgb(232 249 248);
   width: 100%;
 
 }
@@ -63,7 +63,7 @@ footer img{
 
 #icone_footer_img{
   font-size:240%;
-  color: rgb(192, 242, 29);
+  color: #592B92;
 }
 
 #icone_footer_img:hover{
@@ -71,23 +71,21 @@ footer img{
 
 }
 
-
 .lista:link{
   text-decoration: none;
 }
 
 .lista:visited{
   text-decoration: none;
-  color: rgb(235, 236, 230);
 }
 
 
 .lista:hover{
-  color: rgb(192, 242, 29);
+  color: rgb(53, 179, 15);
 }
 
 .label_footer{
-  color: rgb(192, 242, 29);
+  color: #592B92;
   font-weight: 900;
   font-size: 120% ;
 }

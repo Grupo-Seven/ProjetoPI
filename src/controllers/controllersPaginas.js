@@ -30,11 +30,6 @@ const controlePaginas = {
 },
 // farmacia fim ----------------------------------------------------------------------------------------////////
 
-
-
-// variedades inicio -----------------------------------------------------------------------------------////////
-
-
 // pet inicio -------------------------------------------------------------------------------------////////
   pet:(req,res) =>{
    
@@ -80,9 +75,6 @@ const controlePaginas = {
 
 
  home:(req,res) =>{
-
-
-  
    return res.render("home");
  },
 
@@ -91,12 +83,10 @@ const controlePaginas = {
   return res.render("landingPageLogin");
  },
 
-
  duvidas:(req,res) => {
   //console.log(req.cookies.teste);
   return res.render("duvidas");
- },
-
+ }
 };
 
 

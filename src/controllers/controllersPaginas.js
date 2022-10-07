@@ -74,7 +74,23 @@ const controlePaginas = {
 
 
  home:(req,res) =>{
-   return res.render("home");
+
+  const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
+
+  let productsHome = allProducts.filter(function(value){
+    return value.sector == "home" && value.item <= 3
+  })
+
+  let productsHome2 = allProducts.filter(function(value){
+    // value.sector == "home" && value.item >= 4
+    return value.sector == "home" && value.item > 3 && value.item < 7
+  })
+
+  let productsHome3 = allProducts.filter(function(value){
+    return value.sector == "home" && value.item >= 7
+  })
+
+   return res.render("home", {productsHome, productsHome2, productsHome3, toThousand});
  },
 
  login:(req,res) => {

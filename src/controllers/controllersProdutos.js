@@ -53,6 +53,26 @@ const controleProdutos = {
   },
 // pet fim -------------------------------------------------------------------------------------------////////
 
+// home inicio ------------------------------------------------------------------------------------------////////
+detalhesHome:(req,res) =>{
+    
+  const allProducts = todosProdutos.findAll()
+  let item = req.params.item;
+
+  let produtoDetalhe = allProducts.find(function(produtoDetalhe)  {
+    
+    return produtoDetalhe.sector == "home" && produtoDetalhe.item == item
+  
+  })
+
+  return res.render("area_compras_home" ,{produtoDetalhe} );
+},
+// home fim -------------------------------------------------------------------------------------------////////
+
+
+
+
+
 formulario:(req,res) =>{
   
   return res.render("produtoCriar");

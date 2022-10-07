@@ -37,7 +37,6 @@ header{
   width: 11%;
   width: 10%;
   margin-right: 10%;
-
 }
 
 .imagem_logo_img{
@@ -70,8 +69,8 @@ header{
   font-size: 100%;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-
 }
+
 .botao:hover{
   background-color: red;
   color: whitesmoke;
@@ -84,7 +83,6 @@ header{
   justify-content: space-around;
   padding-top: 1%;
   padding-bottom: 1%;
- 
 }
 
 .article_form2{
@@ -205,9 +203,21 @@ header{
   display: flex;
   width:100%;
   justify-content: space-around;
+  align-items: center;
   padding: 12px;
   margin-top: 20px;
   background-color: rgb(232 249 248);
+  font-size: 20px;
+}
+
+.abas a{
+  display: flex;
+  align-items: center;
+}
+.abas a img{
+  width: 49px;
+  height: 49px;
+  margin-bottom: 5px;
 }
 
 /* Altera a configuração padrão dos links  */
@@ -215,7 +225,7 @@ header{
 .tagA_segundo_cabecalho:link{
   text-decoration: none;
   color: #592B92;
-  
+  margin-right: 50px;
 
 }
 /* Altera a configuração padrão dos links  */

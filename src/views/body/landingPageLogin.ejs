@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
     <!--esse script é gerado pelo fontawesome.com que gera icones -->
 
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/formulario_header.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/body_home.css">
-    <link rel="stylesheet" href="/css/body_home_carrossel.css">
-    <link rel="stylesheet" href="/css/menu_hamburguer.css">
+    
+    
     <link rel="stylesheet" href="/css/pageLogin.css">
     
 
@@ -22,44 +22,17 @@
 <body>
   
   <%- include ("../partials/header") %>
-
- <section class="body_menu_hamburguer" ></section>
-  <div class="menu_hamburguer" id="menu_hamburguer">
-    
-    <ul>
-        <li class="lista_label_hambuerguer">
-          Variedades
-           <ul >
-            <a href="/variedades.html"> <li>Eletrônicos</li></a>
-            <a href="/variedades.html"> <li>Móveis</li></a>
-            <a href="/variedades.html"><li>Roupas</li></a>
-           </ul>
-        </li>
-
-        <li class="lista_label_hambuerguer" >Espaço pet
-            <ul >
-              <a href="pet.html"> <li>Gatos</li></a>
-              <a href="pet.html"><li>Cachorros</li></a>
-              <a href="pet.html"><li>Diversos</li></a> 
-            </ul>
-        </li>
-
-        <li class="lista_label_hambuerguer" >Farmácia
-            <ul >
-              <a href="farmacia.html"><li>Remédios</li></a>
-              <a href="farmacia.html"><li>Beleza</li></a>
-              <a href="farmacia.html"><li>Diversos</li></a>
-            </ul>
-        </li>
-
-    </ul>
-
-</div>
- 
   
+<<<<<<< HEAD
   <main class="main_login">
 
                     <form action="/usuarios/login" method="post">
+=======
+    <main class="main_login">
+
+            <section class="block_form2">
+                  <form action="/usuarios/login" method="post">
+>>>>>>> Douglas
                           
                       <h3>Clientes</h3>
                       <% if (typeof errors !=="undefined") {%> 
@@ -116,7 +89,6 @@
 
             </section>
 
-        
   </main>
 
   

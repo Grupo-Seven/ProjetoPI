@@ -42,6 +42,7 @@ app.use("/produtos", RotaProdutos);
 app.use("/criar", RotaProdutos);
 app.use("/usuarios", RotaUsuarios);
 app.use("/users", RotaUsuarios)
+app.use("/quemSomos", RotaPaginas)
 
 
 // rotas do projeto PI-------------------------------------------------------------------------------------------///

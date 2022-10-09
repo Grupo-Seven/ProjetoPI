@@ -102,7 +102,11 @@ const controlePaginas = {
  duvidas:(req,res) => {
   //console.log(req.cookies.teste);
   return res.render("duvidas");
- }
+ },
+
+  quemSomos:(req,res)=>{
+    return res.render("quemSomos")
+  }
 };
 
 

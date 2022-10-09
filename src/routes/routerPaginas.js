@@ -14,6 +14,7 @@ router.get("/pet",controlePaginas.pet);
 router.get("/variedades",controlePaginas.variedades);
 router.get("/",controlePaginas.home);
 router.get("/duvidas",controlePaginas.duvidas);
+router.get("/quemSomos",controlePaginas.quemSomos);
 
 
 

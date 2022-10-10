@@ -8,16 +8,13 @@ const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
 var  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
-router.get("/login",validaLoginCliente,controlePaginas.login);
+router.get("/criarProduto",validaLoginCliente,controlePaginas.login);
 router.get("/farmacia",controlePaginas.farmacia);
 router.get("/pet",controlePaginas.pet);
 router.get("/variedades",controlePaginas.variedades);
 router.get("/",controlePaginas.home);
 router.get("/duvidas",controlePaginas.duvidas);
 router.get("/quemSomos",controlePaginas.quemSomos);
-
-
-
 
 //router.post("/loginEmpresa",controlePaginas.loginValidation);
 

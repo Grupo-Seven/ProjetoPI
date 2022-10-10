@@ -19,38 +19,48 @@
 	<!-- /Header -->
 
 	<div class="container-criacao">
+		<img id="imgCreate" src="/img/Grupo Seven 2.PNG" alt="">
 		<div class="row">
-			<div class="col-12">
-				<h2 class="produtos-title">Formulário do produto</h2>
-			</div>
+			
 		</div>
 		<div class="col-12">
-			<form action="/produtos/criar" method="POST" enctype="multipart/form-data">
+			<form class="productForm" action="/produtos/criar" method="POST" enctype="multipart/form-data">
 					<div class="col-12 col-md-6">
-						<label for="name" class="form-label">Nome do produto:</label>
+						<label for="name" class="form-label">
+							<p>Nome do produto:</p>
+						</label>
 						<input type="text" id="name" name="allProdutos" placeholder="Ex: Ração para gatos" class="form-input">
 					</div>
 					<div class="col-12 col-md-6">
-						<label for="price" class="form-label">Preço do produto:</label>
+						<label for="price" class="form-label">
+							<p>
+								Preço do produto:
+							</p> 
+						</label>
 						<input type="text" id="price" name="price" placeholder="Ex: 1478" class="form-input">
 					</div>
 					<div class="col-12 col-md-6">
-							<label for="category" class="form-label">Setor:</label>
+							<label for="category" class="form-label">
+								<p class="sector">Setor:</p>
+							</label>
                 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Categotia do produto">
            <datalist id="datalistOptions">
                   <option value="Variedades">
                   <option value="Pet">
                   <option value="Farmácia">
-                  <option value="Ofertas">
            </datalist>
 						</select>
 					</div>
 					<div class="col-12">
-						<label for="description" class="form-label">Descrição:</label>
+						<label for="description" class="form-label" id="desc">
+							<p class="descP">Descrição:</p>
+						</label>
 						<textarea name="description" id="description" class="form-input"></textarea>
 					</div>
 					<div class="col-12">
-						<label class="form-label" for="image">Imagem do produto:</label>
+						<label class="form-label" for="image">
+							<p class="descImg">Imagem do produto:</p>
+						</label>
 						<input class="form-input" type="file" name="image" id="image">
 					</div>
 					<div class="col-12">

@@ -36,16 +36,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e delete
 
-// rotas do projeto PI-------------------------------------------------------------------------------------------///
+// rotas-------------------------------------------------------------------------------------------///
 app.use("/", RotaPaginas);
 app.use("/produtos", RotaProdutos);
 app.use("/criar", RotaProdutos);
 app.use("/usuarios", RotaUsuarios);
 app.use("/users", RotaUsuarios)
 app.use("/quemSomos", RotaPaginas)
-
-
-// rotas do projeto PI-------------------------------------------------------------------------------------------///
+// rotas-------------------------------------------------------------------------------------------///
 
 
 // catch 404 and forward to error handler

@@ -70,9 +70,11 @@ detalhesHome:(req,res) =>{
 // home fim -------------------------------------------------------------------------------------------////////
 
 formulario:(req,res) =>{
-  
   return res.render("produtoCriar");
 },
+
+
+
 }
 
 module.exports = controleProdutos;

@@ -106,7 +106,8 @@ const controleUsuarios = {
      if(req.body.lembrar_usuario2){
        res.cookie("emailUsuario",req.body.email2,{maxAge:(1000 * 60) * 20})
      }
-
+     //localStorage.setItem("name", req.body.userLogged)
+     
        return res.redirect("/usuarios/PaginaCliente");
      }
      return res.render("landingPageLogin",{errors:{ email2:"email ou senha não encontrados "}})

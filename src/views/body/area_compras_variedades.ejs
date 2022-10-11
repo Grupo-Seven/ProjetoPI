@@ -53,7 +53,9 @@
               <i class="fa-solid fa-basket-shopping"></i>
               <h3><%= produtoDetalhe.description %></h3>
               <p>R$ <%= produtoDetalhe.price %></p>
-              <button type="submit">Comprar</button>
+              <a href="/cart/variedades/<%= produtoDetalhe.id %>">
+                <button type="submit">Comprar</button>
+              </a>
 
             </div>
 
@@ -63,8 +65,7 @@
 
         <!--fim Artico Aside----------------------------------------->      
         
-  
- </section> 
+    </section> 
 
  <%- include ("../partials/footer") %> 
 

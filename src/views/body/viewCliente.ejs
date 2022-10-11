@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/viewCliente.css">
   <link rel="stylesheet" href="/css/footer.css">
-  
 
 </head>
 
@@ -23,10 +22,10 @@
 
 <main>
   
-  <h1 class="welcome">Olá, <%= userLogged.username2 %> </h1>
+  <h1 class="welcome">Olá, <p class="userName"><%= userLogged.username2 %></p> </h1>
   <h2>Seja bem vindo à sua página!</h2>
-  <h2>A partir <a href="../body/">daqui</a> você pode cadastrar produtos para venda.</h2>
-  <a href="/usuarios/formularioEdit/<%= userLogged.cpf2  %>">Alterar Cadastro</a>
+  <h2>A partir <a class="criarProd" href="/criarProduto2">daqui</a> você pode cadastrar produtos para venda.</h2>
+  <a href="/usuarios/formularioEdit/<%= userLogged.cpf2 %>">Alterar Cadastro</a>
   <a href="/usuarios/logout"><button>Sair da conta</button></a>
 
 </main>

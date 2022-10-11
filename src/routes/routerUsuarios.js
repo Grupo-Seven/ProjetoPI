@@ -8,7 +8,7 @@ const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
 var  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
-router.get("/PaginaCliente",controleUsuarios.PaginaCliente, );
+router.get("/PaginaCliente",controleUsuarios.PaginaCliente);
 
 router.post("/login", controleUsuarios.loginValidation);
 router.get("/logout", controleUsuarios.logout);

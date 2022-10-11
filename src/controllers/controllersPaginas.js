@@ -106,9 +106,32 @@ const controlePaginas = {
 
   quemSomos:(req,res)=>{
     return res.render("quemSomos")
-  }
-};
+  },
 
+  cart:(req,res) =>{
+
+    const allProducts = todosProdutos.findAll()
+
+    let item = req.params.item
+    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
+
+      return produtoDetalhe.sector == "variedades" && produtoDetalhe.item == item
+
+    })
+
+    return res.render("cart", {produtoDetalhe});
+
+  },
+  
+  criarProduto:(req,res) =>{
+    return res.render("produtoCriar")
+  },
+  
+
+  // viewCliente:(req,res) =>{
+  //   return res.render("viewCliente")
+  // }
+};
 
 module.exports = controlePaginas;
 

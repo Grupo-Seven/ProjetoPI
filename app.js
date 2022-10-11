@@ -43,6 +43,10 @@ app.use("/criar", RotaProdutos);
 app.use("/usuarios", RotaUsuarios);
 app.use("/users", RotaUsuarios)
 app.use("/quemSomos", RotaPaginas)
+app.use("/cart", RotaPaginas)
+app.use("/usuarios/PaginaCliente", RotaProdutos)
+app.use("/login", RotaPaginas)
+
 // rotas-------------------------------------------------------------------------------------------///
 
 

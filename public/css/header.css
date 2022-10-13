@@ -17,7 +17,7 @@ header{
   display: flex;
   align-items:center ; /*alinha os elementos no centro   */
   justify-content:space-around;
-  background-color: rgb(213, 33, 33);
+  background-color: rgb(232 249 248)
 
 }
 
@@ -28,10 +28,14 @@ header{
 
 }
 
-.imagem_logo  {
-  width: 10%;
-  margin-right: 10%;
+.cabecalho_imagens div i{ 
+  color: white;
+  font-weight: 700;
+}
 
+.imagem_logo  {
+  width: 11%;
+  margin-right: 10%;
 }
 
 .imagem_logo_img{
@@ -58,14 +62,14 @@ header{
   width: 13%;
   height: 34px;
   cursor: pointer;
-  background-color: rgb(192, 242, 29);
-  color: rgb(243, 18, 18);
+  background-color: #592B92;
+  color: rgb(232 249 248);
   border: none;
   font-size: 100%;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-
 }
+
 .botao:hover{
   background-color: red;
   color: whitesmoke;
@@ -78,11 +82,10 @@ header{
   justify-content: space-around;
   padding-top: 1%;
   padding-bottom: 1%;
- 
 }
 
 .article_form2{
-  background-color: red;
+  background-color: #592B92;
   padding-top: 2%;
   padding-bottom: 1%;
   padding-left: 2%;
@@ -91,34 +94,33 @@ header{
 }
 
 .article_form3{
-  background-color: red;
+  background-color: #592B92;
   padding-top: 2%;
   padding-bottom: 1%;
   padding-left: 2%;
   padding-right: 2%;
   border-radius: 10px;
-
 }
 
 #bota2_i{
-  background-color: rgb(192, 242, 29);
+  background-color: rgb(232 249 248);
   padding-top:10%;
   padding-bottom: 10%;
   padding-left: 20%;
   padding-right: 20%;
-  color: rgb(243, 18, 18);
+  color: #592B92;
   border-radius: 7px;
   font-size: 120%;
   cursor: pointer;
 }
 
 #bota3_i{
-  background-color: rgb(192, 242, 29);
+  background-color: rgb(232 249 248);
   padding-top:10%;
   padding-bottom: 10%;
   padding-left: 20%;
   padding-right: 20%;
-  color: rgb(243, 18, 18);
+  color: #592B92;
   border-radius: 7px;
   font-size: 120%;
   cursor: pointer;
@@ -126,10 +128,9 @@ header{
 
 #bota2_i:hover,
 #bota3_i:hover{
-  background-color: red;
+  background-color: #7300ff; 
   color: whitesmoke;
 }
-
 
 .text_botao2 ,
 .text_botao3 ,
@@ -153,9 +154,7 @@ header{
   width: 15%;
   align-items: center;
   justify-content: space-between;
-
 }
-
 
 .botao4{
   background-color: rgb(192, 242, 29);
@@ -177,23 +176,22 @@ header{
 
 /*  Segunda parte do header   */
 .segunda_cabecalho{
- background-color: rgb(233, 64, 64);
+ background-color: rgb(232 249 248);
  width: 100%;
  height: 40px;
  display: flex;
  align-items: center;
  justify-content: space-around;
- 
 }
 
 .link{
- background-color: rgb(237, 35, 35);
+ background-color: #592B92;
  display: flex;
- width: 15%;
- justify-content: space-around;
- color: whitesmoke;
+ width: 13%;
+ justify-content: center;
+ color: rgb(232 249 248);
  padding: 0.80%;
-   
+ margin-top: 1.3%;
 }
 
 .link i{
@@ -202,47 +200,53 @@ header{
 
 .abas{
   display: flex;
-  width:80%;
+  width:100%;
   justify-content: space-around;
-  padding-top: 10px;
-  color: whitesmoke;
-  
-   
+  align-items: center;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: rgb(232 249 248);
+  font-size: 20px;
+}
+
+.abas a{
+  display: flex;
+  align-items: center;
+}
+.abas a img{
+  width: 49px;
+  height: 49px;
+  margin-bottom: 5px;
 }
 
 /* Altera a configuração padrão dos links  */
 /* link que ainda não foi visitado */
 .tagA_segundo_cabecalho:link{
   text-decoration: none;
-  color: rgb(235, 236, 230);
-
-}
-
-.tagA_segundo_cabecalho:visited{
-  color: rgb(235, 236, 230);
-  text-decoration: none;
+  color: #592B92;
+  margin-right: 50px;
 
 }
 /* Altera a configuração padrão dos links  */
 
 .mercado,.pet,.farmacia{
   cursor: pointer;
-
+  color: #592B92;
 }
 
 .mercado:hover ,
 .pet:hover ,
 .farmacia:hover,
 .oferta:hover {
-  color: rgb(199, 233, 64);
+  color: rgb(53, 179, 15);
 
 }
 
-#pag_mercado,
-#pag_pet ,
-#pag_farmacia {
-  background-color: rgb(199, 233, 64);
-  color: rgb(237, 35, 35);
+#pag_pet,
+#pag_farmacia,
+#pag_variedades {
+  background-color: #592B92;
+  color: rgb(235, 236, 230);
   border-radius: 5px;
   padding: 6px;
   margin-top: -6px;
@@ -253,11 +257,15 @@ header{
 /*  Segunda parte do header   */
 /* ------------------------------------------------------------------------------------FIM */
 
-@media (max-width:795px){
+@media (max-width:794px){
 
 header{
   position: fixed;
   top:0vh;
+}
+
+.imagem_logo_img{
+  width: 105%;
 }
 
 .oferta{
@@ -272,7 +280,6 @@ header{
 .text_botao3 {
   display: none;
 }
-
 
 #bota3_i{
  
@@ -289,12 +296,19 @@ header{
 
 }
 
-.imagem_logo  {
-  width: 25%;
- 
+.imagem_logo_img{
+  width: 156%;
 }
+
+.link {
+  margin-top: 3%;
+  padding: 1.8%;
+  padding-bottom: 9px;
+}
+
 .link i{
   font-size: 150%;
+  margin-top: 9%;
 }
 
 
@@ -308,47 +322,39 @@ header{
   height: 35px;
 }
 
-
 }
 
 @media (max-width:795px) and (min-width:587px){
 
   .imagem_logo  {
-    width: 20%;
+    max-width: 20%;
     margin-right: 10%;
   
   }
   
   .imagem_logo_img{
-    width: 80%;
+    width: 105%;
   }
  
   .link i{
     font-size: 150%;
   }
-
 }
 
-@media (max-width:3000px) and (min-width:1407px){
-  
 
+@media (max-width:3000px) and (min-width:1407px)
+
+{
   .imagem_logo_img{
-    width: 100%;
+    width: 105%;
   }
-
 
    .segunda_cabecalho{
     width: 100%;
-    height: 50px;
-   
-    
+    height: 50px;    
    }
-
    .primeiro_cabecalho{
     width: 100%;
     height: 105px;
-   
    }
-
-
 }

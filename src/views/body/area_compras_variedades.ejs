@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
   <title><%= //produtoDetalhe2.description %></title>
-  <link rel="stylesheet" href="/css/menu_hamburguer.css">
-  <link rel="stylesheet" href="/css/area_compras_header.css">
+  <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/area_compras.css">
   <link rel="stylesheet" href="/css/footer.css">
 
@@ -15,40 +14,7 @@
 
 <body>
 
-<%- include ("../partials/header") %> 
-
- <section class="body_menu_hamburguer" ></section>
-  <div class="menu_hamburguer" id="menu_hamburguer">
-    
-    <ul>
-        <li class="lista_label_hambuerguer">
-          Variedades
-           <ul >
-            <a href="/variedades.html"> <li>Eletrônicos</li></a>
-            <a href="/variedades.html"> <li>Móveis</li></a>
-            <a href="/variedades.html"><li>Roupas</li></a>
-           </ul>
-        </li>
-
-        <li class="lista_label_hambuerguer" >Espaço pet
-            <ul >
-              <a href="pet.html"> <li>Gatos</li></a>
-              <a href="pet.html"><li>Cachorros</li></a>
-              <a href="pet.html"><li>Diversos</li></a> 
-            </ul>
-        </li>
-
-        <li class="lista_label_hambuerguer" >Farmácia
-            <ul >
-              <a href="farmacia.html"><li>Remédios</li></a>
-              <a href="farmacia.html"><li>Beleza</li></a>
-              <a href="farmacia.html"><li>Diversos</li></a>
-            </ul>
-        </li>
-
-    </ul>
-
-</div>
+  <%- include ("../partials/header") %>
 
           <!-- Inicio Primeira Section ---------------------------------------------------------------------------->   
 
@@ -87,7 +53,9 @@
               <i class="fa-solid fa-basket-shopping"></i>
               <h3><%= produtoDetalhe.description %></h3>
               <p>R$ <%= produtoDetalhe.price %></p>
-              <button type="submit">Comprar</button>
+              <a href="/cart/variedades/<%= produtoDetalhe.id %>">
+                <button type="submit">Comprar</button>
+              </a>
 
             </div>
 
@@ -97,8 +65,7 @@
 
         <!--fim Artico Aside----------------------------------------->      
         
-  
- </section> 
+    </section> 
 
  <%- include ("../partials/footer") %> 
 

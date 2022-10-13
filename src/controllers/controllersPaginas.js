@@ -30,11 +30,6 @@ const controlePaginas = {
 },
 // farmacia fim ----------------------------------------------------------------------------------------////////
 
-
-
-// variedades inicio -----------------------------------------------------------------------------------////////
-
-
 // pet inicio -------------------------------------------------------------------------------------////////
   pet:(req,res) =>{
    
@@ -80,9 +75,22 @@ const controlePaginas = {
 
  home:(req,res) =>{
 
+  const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
 
-  
-   return res.render("home");
+  let productsHome = allProducts.filter(function(value){
+    return value.sector == "home" && value.item <= 3
+  })
+
+  let productsHome2 = allProducts.filter(function(value){
+    // value.sector == "home" && value.item >= 4
+    return value.sector == "home" && value.item > 3 && value.item < 7
+  })
+
+  let productsHome3 = allProducts.filter(function(value){
+    return value.sector == "home" && value.item >= 7
+  })
+
+   return res.render("home", {productsHome, productsHome2, productsHome3, toThousand});
  },
 
  login:(req,res) => {
@@ -90,14 +98,39 @@ const controlePaginas = {
   return res.render("landingPageLogin");
  },
 
-
  duvidas:(req,res) => {
   //console.log(req.cookies.teste);
   return res.render("duvidas");
  },
 
-};
+  quemSomos:(req,res)=>{
+    return res.render("quemSomos")
+  },
 
+  cart:(req,res) =>{
+
+    const allProducts = todosProdutos.findAll()
+
+    let item = req.params.item
+    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
+
+      return produtoDetalhe.sector == "variedades" && produtoDetalhe.item == item
+
+    })
+
+    return res.render("cart", {produtoDetalhe});
+
+  },
+  
+  criarProduto:(req,res) =>{
+    return res.render("produtoCriar")
+  },
+  
+
+  // viewCliente:(req,res) =>{
+  //   return res.render("viewCliente")
+  // }
+};
 
 module.exports = controlePaginas;
 

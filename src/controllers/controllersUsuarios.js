@@ -2,10 +2,14 @@ const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
 <<<<<<< HEAD
+<<<<<<< HEAD
 const {Usuario} = require("../../models");
 =======
 const {Usuario} = require("/Users/PC/DH/Grupo_Seven/models")
 >>>>>>> ed6134fb37f67ac83547886402fbcaea52bf97e9
+=======
+const {Usuario} = require("../../models")
+>>>>>>> 8a2dc77bbeca41bb1d9d11317f28d2e3b239d60e
 
 
 const controleUsuarios = {
@@ -110,7 +114,8 @@ const controleUsuarios = {
      if(req.body.lembrar_usuario2){
        res.cookie("emailUsuario",req.body.email2,{maxAge:(1000 * 60) * 20})
      }
-
+     //localStorage.setItem("name", req.body.userLogged)
+     
        return res.redirect("/usuarios/PaginaCliente");
      }
      return res.render("landingPageLogin",{errors:{ email2:"email ou senha não encontrados "}})
@@ -132,7 +137,9 @@ const controleUsuarios = {
   },
 
 
-  // método de busca do banco de dados
+  // a partir daqui, método de busca do banco de dados
+
+  // como os métodos de função de busca são assíncronos usamos async/await
   index:async (req,res)=>{
     let users = await Produto.findAll()
     console.log(users)

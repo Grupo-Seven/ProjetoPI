@@ -1,15 +1,7 @@
 const  todosUsuarios = require("../models/usuariosModels");
 const {validationResult} = require("express-validator");
 const bcrypt = require("bcryptjs");
-<<<<<<< HEAD
-<<<<<<< HEAD
-const {Usuario} = require("../../models");
-=======
-const {Usuario} = require("/Users/PC/DH/Grupo_Seven/models")
->>>>>>> ed6134fb37f67ac83547886402fbcaea52bf97e9
-=======
 const {Usuario} = require("../../models")
->>>>>>> 8a2dc77bbeca41bb1d9d11317f28d2e3b239d60e
 
 
 const controleUsuarios = {

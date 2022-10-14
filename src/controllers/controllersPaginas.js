@@ -126,10 +126,11 @@ const controlePaginas = {
     return res.render("produtoCriar")
   },
   
+politicadevendas:(req,res) =>{
+  return res.render("politicasdevendas")
+},
 
-  // viewCliente:(req,res) =>{
-  //   return res.render("viewCliente")
-  // }
+
 };
 
 module.exports = controlePaginas;

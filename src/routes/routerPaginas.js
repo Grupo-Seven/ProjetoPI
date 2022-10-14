@@ -22,6 +22,7 @@ router.get("/area_compras_variedades/:item",controleProdutos.detalhesVariedades)
 //router.get("/PaginaCliente", controlePaginas.viewCliente);
 router.get("/criarProduto2", controlePaginas.criarProduto, validaLoginCliente);
 //router.get("/login", controlePaginas.login);
+router.get("/politicasdevendas", controlePaginas.politicadevendas);
 
 //router.post("/loginEmpresa",controlePaginas.loginValidation);
 

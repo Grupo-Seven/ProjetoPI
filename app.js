@@ -46,6 +46,8 @@ app.use("/quemSomos", RotaPaginas)
 app.use("/cart", RotaPaginas)
 app.use("/usuarios/PaginaCliente", RotaProdutos)
 app.use("/login", RotaPaginas)
+app.use("/politicadevendas", RotaPaginas)
+
 
 // rotas-------------------------------------------------------------------------------------------///
 

@@ -27,7 +27,25 @@
     transition-delay:all 100000s;
 }
 
+.duvidasParagraph2{
+    padding: 2%;
+    margin-top: 5%;
+    padding: 4%;
+    border: #592B92 solid 1.2px;
+    background-color: rgb(235, 236, 230);
+    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+    border-radius: 10px;
+    transition: background-color 1000ms;
+    transition-delay:all 100000s;
+}
+
+
 .duvidasParagraph:hover{
+    background-color: #c0add8;
+    border:solid 2px #592B92;
+}
+
+.duvidasParagraph2:hover{
     background-color: #c0add8;
     border:solid 2px #592B92;
 }

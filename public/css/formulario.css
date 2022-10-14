@@ -10,7 +10,7 @@
 .header{
   position: relative;
   font-family: 'arial', sans-serif;
-  color: rgb(222, 20, 20);
+  background-color:  #592B92;
 }
 
 .body_login{
@@ -43,8 +43,8 @@
 
 .botao_login{
   text-align: center;
-  background-color: #f71212;
-  border: 2px solid #ff0000;
+  background-color: #592B92;
+  border: solid #592B92 2px;
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
@@ -58,15 +58,15 @@
 }
 
 .botao_login:hover{
-  background-color: #d3e40d;
-  border: 2px solid #ff0000;
-  color: rgb(222, 20, 20);
+  background-color: rgb(232 249 248);
+  border: 2px solid #592B92;
+  color: #592B92;
 }
 
 .action-button{
   text-align: center;
   background-color: rgb(239, 98, 98);
-  color: rgb(222, 20, 20);
+  color: rgb(232 249 248);
   cursor: pointer;
   width: 100%;
   padding: 2%;
@@ -76,10 +76,10 @@
 }
 
 
-.action-button:hover{
+/* .action-button:hover{
   background-color: #d3e40d;
   color: rgb(222, 20, 20);
-}
+} */
 
 #email_login {
   position: absolute;
@@ -97,7 +97,7 @@
   padding-bottom: 1%;
   width: 80%;
   border: 2px solid #f0f0f0;
-  border-radius: 5px;
+  border-bottom: 5px;
   top:90px
 }
 
@@ -110,15 +110,20 @@
 main {
   width: 100%;
   min-height: 800px;
-  background: linear-gradient(90deg, #e13131 0%, #eb979c 100%);
+  background: rgb(232 249 248);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  border-top: rgb(232 249 248);
+  border-left: rgb(232 249 248);
+  border-right: rgb(232 249 248);
+  border-bottom: solid #592B92 2px;
+  margin-top: 5%;
 }
 
 .container {
-  background-color: #f39696;
+  background-color: #592B92;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.475);
   width: 400px;
@@ -126,9 +131,11 @@ main {
   overflow: hidden;
 }
 
+
 .header {
-  background-color: rgb(239, 98, 98);
+  background-color: #592B92;
   padding: 20px;
+  border-bottom: rgb(232 249 248) 2px solid;
 }
 
 .form {
@@ -153,7 +160,7 @@ main {
   font-size: 14px;
   width: 100%;
   padding: 10px;
-  background-color: rgb(238, 208, 208);
+  background-color: rgb(232 249 248);
 }
 
 .form-control i {
@@ -171,14 +178,14 @@ main {
 }
 
 .form-control p {
-  color: #db1701;
+  color: #592B92;
   font-weight: 600;
   padding-top: 3%;
 }
 
 .form button {
-  background-color: #f71212;
-  border: 2px solid #ff0000;
+  background-color: #592B92;
+  border: 2px solid rgb(232 249 248);
   color: #fff;
   font-size: 14px;
   width: 100%;
@@ -189,9 +196,9 @@ main {
 
 .form button:hover{
 
-  background-color: #d3e40d;
-  border: 2px solid #ff0000;
-  color: rgb(222, 20, 20);
+  background-color: rgb(232 249 248);
+  border: 2px solid #592B92;
+  color: #592B92;
 
 
 }
@@ -202,7 +209,7 @@ main {
 }
 
 .form-control.error input {
-  border-color: #e74c3c;
+  border-color: #592B92;
 }
 
 .form-control.success i.fa-check-circle {
@@ -211,13 +218,13 @@ main {
 }
 
 .form-control.error i.fa-exclamation-circle {
-  color: #e74c3c;
+  color: #592B92;
   visibility: visible;
 }
 
 .form-control.error small {
   visibility: visible;
-  color: #db1701;
+  color: #592B92;
 }
 
 
@@ -226,7 +233,7 @@ main {
 @media (max-width:415px) and (min-width:395px) {
 
   .container {
-    background-color: #f39696;
+    background-color: rgb(232 249 248);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.475);
     width: 380px;
@@ -239,7 +246,7 @@ main {
 @media (max-width:394px)and (min-width:374px){
 
   .container {
-    background-color: #f39696;
+    background-color: rgb(232 249 248);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.475);
     width: 360px;
@@ -252,7 +259,7 @@ main {
 @media (max-width:373px)and (min-width:349px){
 
   .container {
-    background-color: #f39696;
+    background-color: rgb(232 249 248);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.475);
     width: 330px;
@@ -265,7 +272,7 @@ main {
 @media (max-width:348px)and (min-width:320px){
 
   .container {
-    background-color: #f39696;
+    background-color:rgb(232 249 248);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.475);
     width: 310px;

@@ -14,7 +14,6 @@ const session = require("express-session");
 const RotaPaginas = require("./src/routes/routerPaginas");
 const RotaProdutos = require("./src/routes/routerProdutos");
 const RotaUsuarios = require("./src/routes/routerUsuarios");
-
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 
 
@@ -37,15 +36,20 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e delete
 
-// rotas do projeto PI-------------------------------------------------------------------------------------------///
-app.use("/",RotaPaginas);
-app.use("/produtos",RotaProdutos);
-app.use("/criar",RotaProdutos);
-app.use("/usuarios",RotaUsuarios);
+// rotas-------------------------------------------------------------------------------------------///
+app.use("/", RotaPaginas);
+app.use("/produtos", RotaProdutos);
+app.use("/criar", RotaProdutos);
+app.use("/usuarios", RotaUsuarios);
 app.use("/users", RotaUsuarios)
+app.use("/quemSomos", RotaPaginas)
+app.use("/cart", RotaPaginas)
+app.use("/usuarios/PaginaCliente", RotaProdutos)
+app.use("/login", RotaPaginas)
+app.use("/politicadevendas", RotaPaginas)
 
 
-// rotas do projeto PI-------------------------------------------------------------------------------------------///
+// rotas-------------------------------------------------------------------------------------------///
 
 
 // catch 404 and forward to error handler

@@ -11,16 +11,15 @@ const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
 router.get("/PaginaCliente",controleUsuarios.PaginaCliente);
 
-router.post("/login",controleUsuarios.loginValidation);
-router.get("/logout",controleUsuarios.logout);
+router.post("/login", controleUsuarios.loginValidation);
+router.get("/logout", controleUsuarios.logout);
 
-
-router.get("/formulario",controleUsuarios.formulario);
+router.get("/formulario", controleUsuarios.formulario);
 router.post("/formulario", validations ,controleUsuarios.armazenar);
 
-router.get("/formularioEdit/:cpf2" ,controleUsuarios.formularioEdit);
-router.put("/formularioEdit/:cpf2" ,controleUsuarios.formularioUpdate);
-router.delete("/formularioEdit/:cpf2" ,controleUsuarios.formularioDelete);
+router.get("/formularioEdit/:cpf2", controleUsuarios.formularioEdit);
+router.put("/formularioEdit/:cpf2", controleUsuarios.formularioUpdate);
+router.delete("/formularioEdit/:cpf2", controleUsuarios.formularioDelete);
 
 // a partir daqui as rotas dos métodos de sequelize
 router.get("/", controleUsuarios.index)

@@ -12,7 +12,7 @@ router.get("/criarProduto", validaLoginCliente, controlePaginas.login);
 router.get("/farmacia", controlePaginas.farmacia);
 router.get("/pet", controlePaginas.pet);
 router.get("/variedades", controlePaginas.variedades);
-router.get("/", controlePaginas.home);
+router.get("/", controlePaginas.home, controlePaginas.homeLogin);
 router.get("/duvidas", controlePaginas.duvidas);
 router.get("/quemSomos", controlePaginas.quemSomos);
 router.get("/cart/variedades/:item", controlePaginas.cart);

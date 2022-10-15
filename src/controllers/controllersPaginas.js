@@ -127,6 +127,9 @@ const controlePaginas = {
     return res.render("produtoCriar")
   },
   
+  homeLogin:(req,res) =>{
+    return res.render("landingPageLogin")
+  }
 
   // viewCliente:(req,res) =>{
   //   return res.render("viewCliente")

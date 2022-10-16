@@ -54,7 +54,6 @@ const controlePaginas = {
 
 
   // variedades inicio -----------------------------------------------------------------------------------------////////
-
  variedades:(req,res) =>{
 
   const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models

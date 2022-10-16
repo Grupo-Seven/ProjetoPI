@@ -11,6 +11,10 @@ body{
     border-top-right-radius: 10px;
 }
 
+p{
+    margin-top: 15px;
+}
+
 .produtcts{
     flex-direction: column;
     display: flex;
@@ -29,7 +33,7 @@ body{
     flex-wrap: wrap;
     background-color: #592B92;
     border-radius: 10px;
-    text-align: center;
+   text-align: center;
 }
 
 .products1 div{
@@ -61,6 +65,7 @@ body{
 .products1 button{
     display: inline-block;
     margin-top: 6%;
+    margin-left: 19%;
     padding: 2%;
     background-color: #3AC0CC;
     border: none;

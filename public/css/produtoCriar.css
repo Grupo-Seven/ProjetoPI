@@ -1,42 +1,145 @@
+*{
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+}
 
 .body{
-  background-color: #e2abab;
+  background-color: #592B92;
   justify-content: space-around;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: smaller;
 }
+
 .row{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e2abab;
+  background-color: #592B92;
 }
+
 .col-12{
   display: flex;
   padding-top: 1%;
   padding-bottom: 1%;
+  justify-content: flex-end;
+  width: 95%;
+}
+
+.label {
+  display: block;
+  width: 45%;
+  float:left;
+}
+
+.form-label {
+  display: inline-block;
+  font-size: 1.4em;
+  margin: 10px 0;
+}
+
+.form-input {
+  
+  width: 400px;
+  /* height: 25px; */
+  margin-bottom: 5px;
+  font-size: 1em;
+  border-top: rgb(232 249 248);
+  border-left: rgb(232 249 248);
+  border-right: rgb(232 249 248);
+  border-bottom: solid #592B92;
+  
+}
+
+.form-control{
+  display: block;
+  width: 400px;
+  /* height: 25px; */
+  margin-bottom: 5px;
+  font-size: 1em;
+  border-top: rgb(232 249 248);
+  border-left: rgb(232 249 248);
+  border-right: rgb(232 249 248);
+  border-bottom: solid #592B92;
+  padding: 15 30px;
+}
+
+.sector{
+  margin-right: 15px;
+}
+
+.descP{
+  margin-left: 162px;
+}
+
+#desc{
+  width: 350px;
+  height: 200px;
+}
+
+p{
+  padding-right: 50px;
+  color: #592B92;
+  font-weight: 900;
+}
+
+.container-criacao{
   display: flex;
-  justify-content: center;
-  background-color: #e2abab;
+  margin: 15px;
+  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  border: #592B92 solid 2px;
+  background-color: rgb(232 249 248);
+  box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
+  border-radius: 10px;
 }
 
-
-*{
-    margin: 0;
-    padding:0 ;
-    box-sizing: border-box;
+#imgCreate{
+  display: flex;
+  max-width: 50%;
+  flex-direction: column;
 }
 
-.body{
-    background-color: #592B92;
-    justify-content: space-around;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: smaller;
+.buy-now-button{
+display: inline-block;
+margin-top: 6%;
+padding: 2%;
+background-color: #592B92;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+color: white;
+border: 0.7px solid white;
+font-weight: bold;
+margin-right: 17%;
+}
+
+.buy-now-button:hover{
+background-color: white;
+  color: rgb(86, 92, 94);
+  border:0.7px solid rgb(86, 92, 94);
+}
+
+.productForm{
+width: 100%;
+}
+
+/* 
+textarea.form-input {
+  min-height: 10px;
+  resize: vertical;
+  padding: 10px;
+} */
+
+@media (max-width:1310px){
+
+  #imgCreate{
+    max-width: 20%;
   }
 
-  .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #592B92;
+  .container-criacao{
+    flex-direction: flex-wrap;
   }
 
   .col-12{
@@ -44,120 +147,10 @@
     padding-top: 1%;
     padding-bottom: 1%;
     justify-content: flex-end;
-    width: 95%;
+    width: 90%;
   }
 
-  .label {
-    display: block;
-    width: 45%;
-    float:left;
-  }
-  
-  .form-label {
-    display: inline-block;
-    font-size: 1.4em;
-    margin: 10px 0;
-  }
-  
-  .form-input {
-    
-    width: 400px;
-    /* height: 25px; */
-    margin-bottom: 5px;
-    font-size: 1em;
-    border-top: rgb(232 249 248);
-    border-left: rgb(232 249 248);
-    border-right: rgb(232 249 248);
-    border-bottom: solid #592B92;
-    
-  }
-
-  .form-control{
-    display: block;
-    width: 400px;
-    /* height: 25px; */
-    margin-bottom: 5px;
-    font-size: 1em;
-    border-top: rgb(232 249 248);
-    border-left: rgb(232 249 248);
-    border-right: rgb(232 249 248);
-    border-bottom: solid #592B92;
-    padding: 15 30px;
-  }
-
-  .sector{
-    margin-right: 15px;
-  }
-
-  .descP{
-    margin-left: 162px;
-  }
-
-  #desc{
-    width: 350px;
-    height: 200px;
-  }
-
-  p{
-    padding-right: 50px;
-    color: #592B92;
-    font-weight: 900;
-  }
-
-  .container-criacao{
-    display: flex;
-    margin: 15px;
-    margin-top: 5%;
-    padding-top: 5%;
-    padding-bottom: 4%;
-    border: #592B92 solid 2px;
-    background-color: rgb(232 249 248);
-    box-shadow: 8px 8px 8px rgba(15, 15, 15, 0.392);
-    border-radius: 10px;
-  }
-
-  #imgCreate{
-    display: flex;
-    max-width: 50%;
-    flex-direction: column;
-  }
-
-.buy-now-button{
-  display: inline-block;
-  margin-top: 6%;
-  padding: 2%;
-  background-color: #592B92;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  border: 0.7px solid white;
-  font-weight: bold;
-  margin-right: 17%;
-}
-
-.buy-now-button:hover{
-  background-color: white;
-    color: rgb(86, 92, 94);
-    border:0.7px solid rgb(86, 92, 94);
-}
-
-.productForm{
-  width: 100%;
-}
-
-  /* 
-  textarea.form-input {
-    min-height: 10px;
-    resize: vertical;
-    padding: 10px;
-  } */
-
-  @media (max-width:1310px){
-
-    #imgCreate{
-      max-width: 20%;
-    }
+  @media (max-width:1290px){
 
     .container-criacao{
       flex-direction: flex-wrap;
@@ -168,52 +161,38 @@
       padding-top: 1%;
       padding-bottom: 1%;
       justify-content: flex-end;
-      width: 90%;
+      width: 70%;
     }
 
-    @media (max-width:1290px){
-  
+    #imgCreate{
+      width: 100%;
+      height: 100%;
+    }
+
+    .descP{
+      margin-left: 0px;
+    }
+
+    @media (max-width:799px){
+
       .container-criacao{
-        flex-direction: flex-wrap;
-      }
-  
-      .col-12{
-        display: flex;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        justify-content: flex-end;
-        width: 70%;
+        margin-top: 35%;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
-      #imgCreate{
-        width: 100%;
-        height: 100%;
+      .productForm{
+        margin-top: 20%;
       }
-
+      
       .descP{
-        margin-left: 0px;
+        margin-left: -90px;
       }
 
-      @media (max-width:799px){
-
-        .container-criacao{
-          margin-top: 35%;
-          justify-content: center;
-          flex-wrap: wrap;
-        }
-
-        .productForm{
-          margin-top: 20%;
-        }
-        
-        .descP{
-          margin-left: -90px;
-        }
-
-        .descImg{
-          margin-left: -90px;
-        }
-
+      .descImg{
+        margin-left: -90px;
       }
+
     }
   }
+}

@@ -17,7 +17,7 @@
 .block_form2 {
   background-color: rgb(235, 236, 230);
   width: 37%;
-  height: 350px;
+  height: 370px;
   margin-top: 10%;
   margin-bottom: 10%;
   border-radius: 5px;
@@ -83,15 +83,39 @@
 .block_form2  button:hover{
   background-color: rgb(232 249 248);
   color: #592B92;
+  border: #592B92 3px solid;
+}
+
+.clickHere{
+  text-decoration: none;
+  font-weight: 500;
+  padding: 2px;
+  margin: 15px;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #592B92;
+  color:rgb(232 249 248);
+  transition: all 400ms;
+}
+
+.clickHere:hover{
+  background-color: rgb(232 249 248);
+  color: #592B92;
+  border-bottom: #592B92 1px solid;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .p_senha{
   margin-top: 3%;
 }
+
 .p_validation{
   color: #f71212;
 }
-
 
 @media (max-width:1500px) and (min-width:1076px) {
   .main_login{
@@ -128,7 +152,6 @@
     height: 490px;
   }
 
-
   .block_form1 h3,
   .block_form2 h3 {
     font-size: 150%;
@@ -155,7 +178,4 @@
   .block_form2 p{
     font-size: 120%;
   }
-
 }
-
-

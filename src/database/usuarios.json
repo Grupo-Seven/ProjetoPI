@@ -43,5 +43,14 @@
   "password2": "$2a$10$jv8TbY3kyUYbFwXZsCtGPeKazkOkaCApdismY770dbU1V8f3cQWqm",
   "passwordConfirmation2": "123456789",
   "id": 5
+ },
+ {
+  "username2": "Ayrton",
+  "email2": "ayrton@email.com",
+  "cpf2": "40041045688",
+  "telefone2": "1125529156",
+  "password2": "$2a$10$wCyckeku4qUikRKtd/uUy.XRQ3CQ9D0YtwamZzXFORGhChzJf6eke",
+  "passwordConfirmation2": "123456789",
+  "id": 6
  }
 ]

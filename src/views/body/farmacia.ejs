@@ -30,7 +30,7 @@
               <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
               <p><%= element1.description %> </p>
               <P> R$ <%= toThousand(element1.price) %> </P>
-              <a target="_blank" href="/produtos/area_compras_farmacia/<%= element1.item %> ">
+              <a href="/produtos/area_compras_farmacia/<%= element1.item %> ">
                 <button id="button_comprar" type="submit">Comprar</button></a>
               <button type="submit">Carrinho</button>
           </div>
@@ -52,7 +52,7 @@
             <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
             <p><%= element2.description %></p>
             <P>R$ <%= toThousand(element2.price) %></P>
-            <a  target="_blank" href="/produtos/area_compras_farmacia/<%= element2.item %>">
+            <a href="/produtos/area_compras_farmacia/<%= element2.item %>">
               <button id="button_comprar" type="submit">Comprar</button></a>
             <button type="submit">Carrinho</button>
         </div>

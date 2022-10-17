@@ -73,15 +73,57 @@ formulario:(req,res) =>{
   return res.render("produtoCriar");
 },
 
+// crud de produtos ======================================
 
+	// Detalhe de produtos ======================
+	detail: (req, res) => {
+		const { id } = req.params;
+		const allProducts = Produto.findOne(id)
 
-}
+		res.render('descricaoProduto', { produto, toThousand });
+	},
 
+	// Create - Form to create
+	create: (req, res) => {
+		res.render('produtoCriar');
+	},
+	
+	// Create 
+	store: (req, res) => {
+		const products = Produto.findAll();
+		const receivedProduto = req.body;
+		receivedProduto.image = req.file.filename; // req.file -> propriedade adicionada pelo multer, na rota!
+		receivedProduto.id = products.length + 1; // gerar o próximo ID do array, tamanho do array + 1!
 
-formulario:(req,res) =>{
-  
-  return res.render("produtoCriar");
-},
+		products.push(receivedProduto);
+		Produto.save(products);
 
+		res.redirect('/descricaoProduto/' + receivedProduto.id);
+	},
+
+	// Update 
+	edit: (req, res) => {
+		const { id } = req.params;
+		const product = Produto.findOne(id);
+
+		res.render('/produtos/editar/', { produto });
+	},
+
+	// Update
+	update: (req, res) => {
+		const { id } = req.params;
+		Produto.update(id, req.body);
+
+		res.redirect('/produtos/editar/' + id);
+	},
+
+	// Delete 
+	destroy : (req, res) => {
+		const { id } = req.params;
+		Produto.destroy(id);
+
+		res.redirect('/');
+	}
+};
 
 module.exports = controleProdutos;

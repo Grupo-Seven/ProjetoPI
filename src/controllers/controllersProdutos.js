@@ -1,4 +1,6 @@
 const  todosProdutos = require("../models/produto");
+const express = require('express');
+const app = express();
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
@@ -77,10 +79,10 @@ formulario:(req,res) =>{
 
 	// Detalhe de produtos ======================
 	detail: (req, res) => {
-		const { id } = req.params;
-		const allProducts = Produto.findOne(id)
+		// const { id } = req.params;
+		const allProducts = Produto.findAll();
 
-		res.render('descricaoProduto', { produto, toThousand });
+		res.render('descricaoProduto', { produtoDetalhe, toThousand });
 	},
 
 	// Create - Form to create
@@ -101,14 +103,6 @@ formulario:(req,res) =>{
 		res.redirect('/descricaoProduto/' + receivedProduto.id);
 	},
 
-	// Update 
-	edit: (req, res) => {
-		const { id } = req.params;
-		const product = Produto.findOne(id);
-
-		res.render('/produtos/editar/', { produto });
-	},
-
 	// Update
 	update: (req, res) => {
 		const { id } = req.params;
@@ -122,7 +116,7 @@ formulario:(req,res) =>{
 		const { id } = req.params;
 		Produto.destroy(id);
 
-		res.redirect('/');
+		res.redirect('/produtos/' + id );
 	}
 };
 

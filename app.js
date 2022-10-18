@@ -10,6 +10,7 @@ const session = require("express-session");
 //const validaLoginClienteCookies = require("./src/middlewares/validaLoginClienteCookies");
 
 
+
 // rotas variaveis  do projeto PI-------------------------------------------------------------------------------------------///
 const RotaPaginas = require("./src/routes/routerPaginas");
 const RotaProdutos = require("./src/routes/routerProdutos");

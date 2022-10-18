@@ -10,13 +10,9 @@
 .header{
   position: relative;
   font-family: 'arial', sans-serif;
-<<<<<<< HEAD
-  background-color:  #592B92;
-=======
   color: rgb(232 249 248);
   background-color: #592B92;
   padding: 10px;
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
 }
 
 .body_login{
@@ -47,10 +43,6 @@
 .botao_login{
   text-align: center;
   background-color: #592B92;
-<<<<<<< HEAD
-  border: solid #592B92 2px;
-=======
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
@@ -71,13 +63,8 @@
 
 .action-button{
   text-align: center;
-<<<<<<< HEAD
-  background-color: rgb(239, 98, 98);
-  color: rgb(232 249 248);
-=======
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
   cursor: pointer;
   width: 100%;
   padding: 2%;
@@ -89,13 +76,6 @@
   border: 3px solid rgb(232 249 248);
 }
 
-<<<<<<< HEAD
-
-/* .action-button:hover{
-  background-color: #d3e40d;
-  color: rgb(222, 20, 20);
-} */
-=======
 .action-button:hover{
   background-color: rgb(232 249 248);
   color: rgb(222, 20, 20);
@@ -103,7 +83,6 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
 
 #email_login {
   position: absolute;
@@ -135,12 +114,8 @@ main {
   margin: 5%;
   width: 90%;
   min-height: 800px;
-<<<<<<< HEAD
-  background: rgb(232 249 248);
-=======
   border-radius: 15px;
   background: #592B92;
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,11 +128,7 @@ main {
 }
 
 .container {
-<<<<<<< HEAD
-  background-color: #592B92;
-=======
   background-color: rgb(232 249 248);
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.475);
   width: 400px;
@@ -165,16 +136,6 @@ main {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-
-.header {
-  background-color: #592B92;
-  padding: 20px;
-  border-bottom: rgb(232 249 248) 2px solid;
-}
-
-=======
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
 .form {
   padding: 20px;
 }
@@ -195,9 +156,6 @@ main {
   font-size: 14px;
   width: 100%;
   padding: 10px;
-<<<<<<< HEAD
-  background-color: rgb(232 249 248);
-=======
   background-color: white;
   border-top: rgb(232 249 248);
   border-left: rgb(232 249 248);
@@ -210,7 +168,6 @@ main {
   font-size: 20px;
   font-weight: 900;
   color: #592B92;
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
 }
 
 .form-control i {
@@ -235,11 +192,7 @@ main {
 
 .form button {
   background-color: #592B92;
-<<<<<<< HEAD
-  border: 2px solid rgb(232 249 248);
-=======
   border: none;
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
   color: #fff;
   font-size: 14px;
   width: 100%;
@@ -249,18 +202,9 @@ main {
 }
 
 .form button:hover{
-<<<<<<< HEAD
-
   background-color: rgb(232 249 248);
   border: 2px solid #592B92;
   color: #592B92;
-
-
-=======
-  background-color: rgb(232 249 248);
-  border: 2px solid #592B92;
-  color: #592B92;
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
 }
 
 /* Error and Success */

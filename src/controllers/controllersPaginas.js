@@ -126,16 +126,10 @@ const controlePaginas = {
     return res.render("produtoCriar")
   },
   
-<<<<<<< HEAD
 politicadevendas:(req,res) =>{
   return res.render("politicasdevendas")
 },
 
-=======
-  homeLogin:(req,res) =>{
-    return res.render("landingPageLogin")
-  }
->>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
 
 };
 

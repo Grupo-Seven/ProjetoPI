@@ -1,6 +1,7 @@
 const botaoLogin = document.querySelector("#button_entry");
 const section = document.querySelector(".body_login");
 const divLogin = document.querySelector(".login");
+const alterUser = document.querySelector("#alterUser");
 
 
 botaoLogin.addEventListener("click",function(){

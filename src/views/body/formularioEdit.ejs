@@ -83,7 +83,7 @@
           
           <!-- campo da senha e confirmação fim-------------------------------------------------------------------------------->
 
-          <button type="submit"> <strong> Confirmar alteração  </strong></button>  <!-- botão de  confirmação do cadastro -->    
+          <button id="alterUser" type="submit"> <strong> Confirmar alteração  </strong></button>  <!-- botão de  confirmação do cadastro -->    
          
     </form>
          
@@ -106,6 +106,14 @@
 </body>
 
 <script src="/js/login.js"></script>
+<script>
+
+document.getElementById("alterUser").addEventListener("click", function(){
+  alert("Cadastro alterado com sucesso!")
+})
+
+</script>
+
 
 </html>
 

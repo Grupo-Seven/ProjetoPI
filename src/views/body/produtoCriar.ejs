@@ -64,7 +64,7 @@
 						<input class="form-input" type="file" name="image" id="image">
 					</div>
 					<div class="col-12">
-						<button type="submit" class="buy-now-button">Salvar produto</button>
+						<button id="send" type="submit" class="buy-now-button">Salvar produto</button>
 					</div>
 				</div>
 			</form>
@@ -75,5 +75,14 @@
 	<!-- footer -->
 	<%- include('../partials/footer') %>
 	<!-- /footer -->
-</body>	
+</body>
+
+<script>
+
+	document.getElementById("send").addEventListener("click", function(){
+	  alert("Produto cadastrado com sucesso!")
+	})
+  
+  </script>
+
 </html>

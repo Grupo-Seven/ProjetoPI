@@ -36,12 +36,30 @@
   "id": 4
  },
  {
-  "username2": "Douglas",
+  "username2": "Douglas Ferreira",
   "email2": "douglashiuga2@gmail.com",
-  "cpf2": "11111111111",
-  "telefone2": "00000000000",
-  "password2": "$2a$10$jv8TbY3kyUYbFwXZsCtGPeKazkOkaCApdismY770dbU1V8f3cQWqm",
+  "cpf2": "11111111112",
+  "telefone2": "00000000008",
+  "password2": "$2a$10$LeH9e4yZgvYrEirkXigca.e2d.D3BlOvv7gkCtZVQDm5d7yoISXZm",
   "passwordConfirmation2": "123456789",
   "id": 5
+ },
+ {
+  "username2": "DougBoy",
+  "email2": "dougemail@gmail.com",
+  "cpf2": "00000000011",
+  "telefone2": "11111111111",
+  "password2": "$2a$10$0Zx0UaFNTnBOePRUyx314u/xLE52R9VwAPAwctf54qtAxZMZgDGku",
+  "passwordConfirmation2": "123456789",
+  "id": 6
+ },
+ {
+  "username2": "teste",
+  "email2": "teste@teste.com",
+  "cpf2": "77777777733",
+  "telefone2": "8832233322",
+  "password2": "$2a$10$qXeDU6vMQ5GakWINmCqFdOt3q099A8nn68zyT5hN2sUe5128Udu2S",
+  "passwordConfirmation2": "123456",
+  "id": 7
  }
 ]

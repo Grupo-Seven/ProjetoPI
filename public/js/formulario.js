@@ -5,6 +5,7 @@ const password = document.getElementById("password");
 const cpf = document.getElementById("cpf");
 const telefone = document.getElementById("telefone");
 const passwordConfirmation = document.getElementById("password-confirmation");
+const send = document.getElementById("send");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

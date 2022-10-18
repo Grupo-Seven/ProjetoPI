@@ -107,7 +107,7 @@
           
           <!-- campo da senha e confirmação fim-------------------------------------------------------------------------------->
 
-          <button type="submit"> <strong> Enviar </strong></button>  <!-- botão de  confirmação do cadastro -->    
+          <button id="send" type="submit"> <strong> Enviar </strong></button>  <!-- botão de  confirmação do cadastro -->    
        
     </form>
 
@@ -122,6 +122,12 @@
 </body>
 
 <script src="/js/login.js"></script>
+<script>
 
+  document.getElementById("send").addEventListener("click", function(){
+    alert("Cadastro realizado com sucesso!")
+  })
+
+</script>
 </html>
 

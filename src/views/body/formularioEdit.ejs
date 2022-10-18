@@ -10,11 +10,10 @@
     <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
     <!--esse script é gerado pelo fontawesome.com que gera icones -->
 
-    <link rel="stylesheet" href="/css/formulario_header.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/formulario.css">
     
-  
-   
 </head>
 
 <body>
@@ -23,19 +22,12 @@
 
    <main>
       
-
   <div class="container">
       <div class="header">
         <h2>Editar sua  conta </h2>
       </div>
 
-
-<<<<<<< HEAD
-    <form action="/usuarios/formularioEdit/<%= cpfEdit.cpf %>?_method=PUT " method="POST" id ="form" class="form">
-=======
     <form action="/usuarios/formularioEdit/<%= cpfEdit.cpf2 %>?_method=PUT " method="POST" id ="form" class="form">
->>>>>>> Develop
-
 
           <div class="form-control">
 
@@ -45,7 +37,6 @@
             <i class="fas fa-check-circle"></i>
           </div>
 
-      
           <div class="form-control">
 
             <label for="email">Email</label>
@@ -55,7 +46,6 @@
     
           </div>
 
-
           <div class="form-control">
 
             <label for="cpf">CPF</label>
@@ -63,7 +53,6 @@
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
            <!-- <small>Mensagem de erro</small>-->
-          
           </div>
 
           <div class="form-control">
@@ -73,7 +62,6 @@
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
          
-            
           </div>
           
           <!-- campo da senha e confirmação inicio------------------------------------------------------------------------------>
@@ -84,7 +72,6 @@
             <i class="fas fa-check-circle"></i>
             
           </div>
-
 
           <div class="form-control">
             <label for="password-confirmation">Confirmação de senha</label>
@@ -98,7 +85,6 @@
 
           <button type="submit"> <strong> Confirmar alteração  </strong></button>  <!-- botão de  confirmação do cadastro -->    
          
-						
     </form>
          
     <form action="/usuarios/formularioEdit/<%= cpfEdit.cpf2 %>?_method=DELETE" method="POST" >
@@ -108,22 +94,16 @@
   </div>
     
 
-
  </main>
-
-
 
 
  <footer>
 
-
-
+  <%- include ("../partials/footer") %>
 
  </footer>
 
-
 </body>
-
 
 <script src="/js/login.js"></script>
 

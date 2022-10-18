@@ -7,7 +7,10 @@ const validations = require("../middlewares/validaFormulario");
 const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
 var  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
+<<<<<<< HEAD
 // const controleUsuarios = require("../controllers/controllersUsuarios")
+=======
+>>>>>>> ef4f9fe2989460a143671996f4e6937ddee6dd78
 
 router.get("/PaginaCliente",controleUsuarios.PaginaCliente);
 

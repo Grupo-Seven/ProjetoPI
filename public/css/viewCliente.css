@@ -19,3 +19,44 @@ main{
 .userName:hover, .userName:focus{
     transform: translateX(10px) scale(1.4);
 }
+
+.buttonClient{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    
+}
+
+.alter{
+    text-decoration: none;
+    padding: 2%;
+    background-color: #592B92;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.alter:hover{
+    border: 3px solid #592B92;
+    background-color: rgb(235, 236, 230);
+    color: #592B92;
+}
+
+.logOut button{
+    border: none;
+    width: 120px;
+    padding: 18% 0;
+    background-color: #592B92;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.logOut button:hover{
+    border: 3px solid #592B92;
+    background-color: rgb(235, 236, 230);
+    color: #592B92;
+}

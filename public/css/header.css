@@ -53,7 +53,7 @@ header{
   font-size: 100%;
   height: 36px;
   border-radius: 7px;
-  border: none;
+  border: #592B92 3px solid;
   padding-left: 2%;
 }
 
@@ -71,8 +71,9 @@ header{
 }
 
 .botao:hover{
-  background-color: red;
-  color: whitesmoke;
+  background-color: rgb(232 249 248);
+  color: #592B92;
+  border: #592B92 solid 3px;
 }
 
 .all_button {
@@ -128,8 +129,9 @@ header{
 
 #bota2_i:hover,
 #bota3_i:hover{
-  background-color: #7300ff; 
-  color: whitesmoke;
+  border: 2px solid rgb(232 249 248);
+  background-color: #592B92;
+  color: rgb(232 249 248);
 }
 
 .text_botao2 ,
@@ -224,22 +226,13 @@ header{
 .tagA_segundo_cabecalho:link{
   text-decoration: none;
   color: #592B92;
-  margin-right: 50px;
-
 }
+
 /* Altera a configuração padrão dos links  */
 
 .mercado,.pet,.farmacia{
   cursor: pointer;
   color: #592B92;
-}
-
-.mercado:hover ,
-.pet:hover ,
-.farmacia:hover,
-.oferta:hover {
-  color: rgb(53, 179, 15);
-
 }
 
 #pag_pet,
@@ -251,7 +244,6 @@ header{
   padding: 6px;
   margin-top: -6px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.392);
-
 }
 
 /*  Segunda parte do header   */

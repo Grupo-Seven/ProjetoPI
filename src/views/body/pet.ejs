@@ -117,6 +117,25 @@
 
     </section>
 
+     
+    <section class="container">
+      <% productsPet.forEach(element => { %>
+       
+      
+      <div class="card">
+        <img id="" alt="" src="/img/<%= element.image %> " complete="complete">
+        <div class="descricao">
+          <p><%= element.description  %> </p>
+          <P>R$ <%= element.price  %> </P>
+        </div>
+        <a href="/produtos/area_compras_pet/<%= element.item %> ">
+        <button class="comprar">Comprar</button></a>
+        <button class="carrinho">Carrinho</button>
+      </div>
+
+      <% }) %>
+
+    
 
 
   </main>

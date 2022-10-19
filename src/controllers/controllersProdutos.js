@@ -42,45 +42,60 @@ const controleProdutos = {
   // pet inicio ------------------------------------------------------------------------------------------////////
   detalhesPet:(req,res) =>{
     
+      const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
+  
+      let productsPet = allProducts.filter(function(value){
+  
+        return value.sector == "pet" && value.item <= 3 
+  
+      });
+  
+  
+      let productsPet2 = allProducts.filter(function(value){
+  
+        return value.sector == "pet" && value.item >= 4
+      });
+  
+      let productsPet3 = allProducts.filter(function(value){
+  
+        return value.sector == "pet" && value.id >= 18
+      });
+  
+  
+      return res.render("pet",{productsPet , productsPet2, productsPet3, toThousand});
+   },
+
+
+
+  
+// pet fim -------------------------------------------------------------------------------------------////////
+
+// home inicio ------------------------------------------------------------------------------------------////////
+  detalhe:(req,res) =>{
+      
     const allProducts = todosProdutos.findAll()
     let item = req.params.item;
 
     let produtoDetalhe = allProducts.find(function(produtoDetalhe)  {
       
-      return produtoDetalhe.sector == "pet" && produtoDetalhe.item == item
+      return produtoDetalhe.item == item
     
     })
 
-    return res.render("area_compras_pet" ,{produtoDetalhe} );
+    return res.render("area_compras_home" ,{produtoDetalhe} );
   },
-// pet fim -------------------------------------------------------------------------------------------////////
+  // home fim -------------------------------------------------------------------------------------------////////
 
-// home inicio ------------------------------------------------------------------------------------------////////
-detalhesHome:(req,res) =>{
-    
-  const allProducts = todosProdutos.findAll()
-  let item = req.params.item;
+  formulario:(req,res) =>{
+    return res.render("produtoCriar");
+  },
 
-  let produtoDetalhe = allProducts.find(function(produtoDetalhe)  {
-    
-    return produtoDetalhe.sector == "home" && produtoDetalhe.item == item
-  
-  })
-
-  return res.render("area_compras_home" ,{produtoDetalhe} );
-},
-// home fim -------------------------------------------------------------------------------------------////////
-
-formulario:(req,res) =>{
-  return res.render("produtoCriar");
-},
-
-// crud de produtos ======================================
+  // crud de produtos ======================================
 
 	// Detalhe de produtos ======================
 	detail: (req, res) => {
 		// const { id } = req.params;
-		const allProducts = Produto.findAll();
+		const allProducts = todosProdutos.findAll();
 
 		res.render('descricaoProduto', { produtoDetalhe, toThousand });
 	},
@@ -92,21 +107,21 @@ formulario:(req,res) =>{
 	
 	// Create 
 	store: (req, res) => {
-		const products = Produto.findAll();
+    const products = todosProdutos.findAll()
 		const receivedProduto = req.body;
 		receivedProduto.image = req.file.filename; // req.file -> propriedade adicionada pelo multer, na rota!
 		receivedProduto.id = products.length + 1; // gerar o próximo ID do array, tamanho do array + 1!
 
 		products.push(receivedProduto);
-		Produto.save(products);
+		todosProdutos.save(products);
 
-		res.redirect('/descricaoProduto/' + receivedProduto.id);
+		res.redirect('/produtos/detalhe/' + receivedProduto.id);
 	},
 
 	// Update
 	update: (req, res) => {
 		const { id } = req.params;
-		Produto.update(id, req.body);
+		todosProdutos.update(id, req.body);
 
 		res.redirect('/produtos/editar/' + id);
 	},
@@ -114,7 +129,7 @@ formulario:(req,res) =>{
 	// Delete 
 	destroy : (req, res) => {
 		const { id } = req.params;
-		Produto.destroy(id);
+		todosProdutos.destroy(id);
 
 		res.redirect('/produtos/' + id );
 	}

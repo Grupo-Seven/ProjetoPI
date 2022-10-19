@@ -40,12 +40,10 @@ app.use(methodOverride("_method"));// app.use pra habilitar os metodos put e del
 // rotas-------------------------------------------------------------------------------------------///
 app.use("/", RotaPaginas);
 app.use("/produtos", RotaProdutos);
-app.use("/criar", RotaProdutos);
 app.use("/usuarios", RotaUsuarios);
 app.use("/users", RotaUsuarios)
 app.use("/quemSomos", RotaPaginas)
 app.use("/cart", RotaPaginas)
-app.use("/usuarios/PaginaCliente", RotaProdutos)
 app.use("/login", RotaPaginas)
 app.use("/politicadevendas", RotaPaginas)
 

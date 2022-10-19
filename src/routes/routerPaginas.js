@@ -5,14 +5,14 @@ var controleUsuarios = require("../controllers/controllersUsuarios");
 const controleUsuariosEmpresas = require("../controllers/controllersUsuariosEmpresas");
 const validations = require("../middlewares/validaFormulario");
 const validationsEmpresa = require("../middlewares/validaFormularioEmpresa");
-var  controleProdutos = require("../controllers/controllersProdutos");
+const  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
 router.get("/criarProduto", validaLoginCliente, controlePaginas.login);
 router.get("/farmacia", controlePaginas.farmacia);
 router.get("/pet", controlePaginas.pet);
 router.get("/variedades", controlePaginas.variedades);
-// router.get("/", controlePaginas.home, controlePaginas.homeLogin);
+router.get("/", controlePaginas.home);
 router.get("/duvidas", controlePaginas.duvidas);
 router.get("/quemSomos", controlePaginas.quemSomos);
 router.get("/cart/variedades/:item", controlePaginas.cart);
@@ -25,8 +25,6 @@ router.get("/criarProduto2", controlePaginas.criarProduto, validaLoginCliente);
 router.get("/politicasdevendas", controlePaginas.politicadevendas);
 
 //router.post("/loginEmpresa",controlePaginas.loginValidation);
-
-
 
 // inicio formulario-----------------------------------------------------------------------------------------/////
 router.get("/formularioEmpresas",controleUsuariosEmpresas.formularioEmpresa);

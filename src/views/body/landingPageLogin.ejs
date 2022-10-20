@@ -22,10 +22,28 @@
   
   <%- include ("../partials/header") %>
   
+  <main class="main_login">
+
+    <form action="/usuarios/login" method="post">
     <main class="main_login">
       
       <div class="makeLogin">Para anunciar faça seu login</div>
             <section class="block_form2">
+                          
+                      <h3>Clientes</h3>
+                      <% if (typeof errors !=="undefined") {%> 
+                        <p class="p_validation"><%= errors.email2 %></p>
+                      <% } %> 
+                          <div class="form-control">
+                            <label class="label_form" for="email">Email</label><br>
+                    <form action="/usuarios/login" method="post">
+                          
+                      <h3>Clientes</h3>
+                      <% if (typeof errors !=="undefined") {%> 
+                        <p class="p_validation"><%= errors.email2 %></p>
+                      <% } %> 
+                          <div class="form-control">
+                            <label class="label_form" for="email">Email</label><br>+9*------------------
               
                   <form action="/usuarios/login" method="post">
                           

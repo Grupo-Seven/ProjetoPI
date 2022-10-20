@@ -42,29 +42,17 @@ const controleProdutos = {
   // pet inicio ------------------------------------------------------------------------------------------////////
   detalhesPet:(req,res) =>{
     
-      const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
-  
-      let productsPet = allProducts.filter(function(value){
-  
-        return value.sector == "pet" && value.item <= 3 
-  
-      });
-  
-  
-      let productsPet2 = allProducts.filter(function(value){
-  
-        return value.sector == "pet" && value.item >= 4
-      });
-  
-      let productsPet3 = allProducts.filter(function(value){
-  
-        return value.sector == "pet" && value.id >= 18
-      });
-  
-  
-      return res.render("pet",{productsPet , productsPet2, productsPet3, toThousand});
-   },
+    const allProducts = todosProdutos.findAll()
 
+    let item = req.params.item
+    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
+
+      return produtoDetalhe.sector == "pet" && produtoDetalhe.item == item
+
+    })
+
+    return res.render("area_compras_pet", {produtoDetalhe});
+  },
 
 
   

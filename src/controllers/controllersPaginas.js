@@ -107,7 +107,7 @@ const controlePaginas = {
     return res.render("quemSomos")
   },
 
-  cart:(req,res) =>{
+  cartVariedades:(req,res) =>{
 
     const allProducts = todosProdutos.findAll()
 
@@ -115,6 +115,36 @@ const controlePaginas = {
     let produtoDetalhe = allProducts.find(function(produtoDetalhe){
 
       return produtoDetalhe.sector == "variedades" && produtoDetalhe.item == item
+
+    })
+
+    return res.render("cart", {produtoDetalhe});
+
+  },
+
+  cartPet:(req,res) =>{
+
+    const allProducts = todosProdutos.findAll()
+
+    let item = req.params.item
+    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
+
+      return produtoDetalhe.sector == "pet" && produtoDetalhe.item == item
+
+    })
+
+    return res.render("cart", {produtoDetalhe});
+
+  },
+
+  cartFarmacia:(req,res) =>{
+
+    const allProducts = todosProdutos.findAll()
+
+    let item = req.params.item
+    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
+
+      return produtoDetalhe.sector == "farmacia" && produtoDetalhe.item == item
 
     })
 

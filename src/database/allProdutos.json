@@ -304,7 +304,7 @@
     "id": 34
   },
   {
-    "description": "nome do produto",
+    "texto": "nome do produto",
     "price": "1234",
     "sector":"Pet",
     "description": "descriçao teste",

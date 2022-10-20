@@ -22,13 +22,13 @@
             <!-- Inicio Primeiro Artico  de Imagens---------------------------------------------------------------------------->  
         
           <article class="Primeiro_Artico_Compras">
-              <div class="Primeiro_Bloco_Superior"><img src="/img/<%= produtoDetalhe.image %>" alt="Caes e Gatos">
+              <div class="Primeiro_Bloco_Superior"><img src="/img/<%= produtoDetalhe.image %>" alt="">
               </div>
 
               <div class="Segundo_Bloco">
-                  <img src="/img/<%= produtoDetalhe.image %>" alt="Caes e Gatos">
-                  <img src="/img/<%= produtoDetalhe.image %>" alt="Caes e Gatos">
-                  <img src="/img/<%= produtoDetalhe.image %>" alt="Caes e Gatos">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="">
+                  <img src="/img/<%= produtoDetalhe.image %>" alt="">
               </div>
           </article>
 
@@ -55,12 +55,12 @@
               <h3><%= produtoDetalhe.description %></h3>
               <p>R$ <%= produtoDetalhe.price %></p>
 
-              <button type="submit">Comprar</button>
-
-
-              <!-- <button type="submit">Comprar</button> -->
-              <a href="/produtos/area_compras_farmacia/<%= produtoDetalhe.id%>">
-                <button type="button">
+             <!-- <button type="submit">Comprar</button> -->
+              <a href="/cart/farmacia/<%= produtoDetalhe.id %>">
+                <button type="submit">Comprar</button>
+                
+                <button type="submit">Deletar</button>
+              </a>
             </div>
 
   

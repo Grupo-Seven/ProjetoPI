@@ -15,10 +15,14 @@ router.get("/variedades", controlePaginas.variedades);
 router.get("/", controlePaginas.home);
 router.get("/duvidas", controlePaginas.duvidas);
 router.get("/quemSomos", controlePaginas.quemSomos);
-router.get("/cart/variedades/:item", controlePaginas.cart);
-router.get("/cart/pet/:item", controlePaginas.cart);
-router.get("/cart/farmacia/:item", controlePaginas.cart);
+router.get("/cart/variedades/:item", controlePaginas.cartVariedades);
+router.get("/cart/pet/:item", controlePaginas.cartPet);
+router.get("/cart/farmacia/:item", controlePaginas.cartFarmacia);
 router.get("/area_compras_variedades/:item",controleProdutos.detalhesVariedades);
+
+router.get("/area_compras_pet/:item",controleProdutos.detalhesPet);
+router.get("/area_compras_farmacia/:item",controleProdutos.detalhesFarmacia);
+
 //router.get("/PaginaCliente", controlePaginas.viewCliente);
 router.get("/criarProduto2", controlePaginas.criarProduto, validaLoginCliente);
 //router.get("/login", controlePaginas.login);

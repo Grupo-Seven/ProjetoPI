@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/4d88c7f41d.js" crossorigin="anonymous"></script>
-  <title><%= produtoDetalhe.description %></title>
+  <title><%=  %></title>
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/area_compras.css">
   <link rel="stylesheet" href="/css/footer.css">
@@ -22,7 +22,7 @@
             <!-- Inicio Primeiro Artico  de Imagens---------------------------------------------------------------------------->  
         
           <article class="Primeiro_Artico_Compras">
-              <div class="Primeiro_Bloco_Superior"><img src="/img/<%= produtoDetalhe.image %>" alt="img variedades">
+              <div class="Primeiro_Bloco_Superior"><img src="/img/<%= produtoDetalhe.image %>" >
               </div>
 
               <div class="Segundo_Bloco">
@@ -54,8 +54,11 @@
               <i class="fa-solid fa-basket-shopping"></i>
               <h3><%= produtoDetalhe.description %></h3>
               <p>R$ <%= produtoDetalhe.price %></p>
-              <button type="submit">Comprar</button>
-              <button type="submit">Deletar</button>
+              <a target="_blank" href="/cart/pet/<%= produtoDetalhe.id %>">
+                <button type="submit">Comprar</button>
+                
+                <button type="submit">Deletar</button>
+              </a>
 
             </div>
 

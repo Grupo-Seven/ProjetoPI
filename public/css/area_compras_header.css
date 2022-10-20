@@ -233,10 +233,6 @@ header{
 .mercado:hover ,
 .pet:hover ,
 .farmacia:hover,
-<<<<<<< HEAD
-=======
-.oferta:hover
->>>>>>> 11a979224331441a1c7ef7be43496f1d21fe3560
 .oferta:hover
 .variedades:hover {
   color: rgb(199, 233, 64);
@@ -245,11 +241,6 @@ header{
 
 #pag_mercado,
 #pag_pet ,
-<<<<<<< HEAD
-=======
-
-#pag_farmacia
->>>>>>> 11a979224331441a1c7ef7be43496f1d21fe3560
 #pag_farmacia
 #pag_variedades {
   background-color: rgb(199, 233, 64);

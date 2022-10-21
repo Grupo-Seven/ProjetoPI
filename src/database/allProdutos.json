@@ -296,27 +296,39 @@
     "texto": "NOVANOITE (Passiflora Incarnata L. 320mg) Indicação: tratamento da ansiedade leve, como estados de irritabilidade, agitação nervosa, tratamento de insônia e desordens da ansiedade. MS 1.8326.0481."
   },
   {
-    "description": "racao teste",
-    "sector": "farmacia",
-    "price": "1234'",
-    "texto": "teste",
-    "image": "1666198689343-erro-404-1.webp",
-    "id": 34
-  },
-  {
     "texto": "nome do produto",
     "price": "1234",
-    "sector":"Pet",
-    "description": "descriçao teste",
-    "image": "1666200684452-Screenshot_20210717-163440_Instagram.jpg",
-    "id": 35
+    "sector": "pet",
+    "description": "descriçao produto",
+    "image": "1666371842669-erro-404-1.webp",
+    "id": 34,
+    "item": 10
   },
   {
-    "texto": "nome do produto",
-    "price": "1234",
-    "sector": "Pet",
-    "description": "descrição pet",
-    "image": "1666201618818-Screenshot_20210717-163440_Instagram.jpg",
-    "id": 36
+    "texto": " produto ",
+    "price": "1245",
+    "sector": "pet",
+    "description": "descricao pet",
+    "image": "1666372311356-image-dorflex.webp",
+    "id": 35,
+    "item": 11
+  },
+  {
+    "texto": "variedades",
+    "price": "123",
+    "sector": "variedades",
+    "description": "descrição variedades",
+    "image": "1666376952453-erro-404-1.webp",
+    "id": 36,
+    "item": 12
+  },
+  {
+    "texto": "produto farmacia",
+    "price": "1245",
+    "sector": "farmácia",
+    "description": "descriçao produto farmacia ",
+    "image": "1666378107832-image-dorflex.webp",
+    "id": 37,
+    "item": 13
   }
 ]

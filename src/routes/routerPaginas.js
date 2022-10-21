@@ -16,7 +16,7 @@ router.get("/", controlePaginas.home);
 router.get("/duvidas", controlePaginas.duvidas);
 router.get("/quemSomos", controlePaginas.quemSomos);
 router.get("/cart/variedades/:item", controlePaginas.cartVariedades);
-router.get("/cart/pet/:item", controlePaginas.cartPet);
+router.get("/cart/pet/:id", controlePaginas.cartPet);
 router.get("/cart/farmacia/:item", controlePaginas.cartFarmacia);
 router.get("/area_compras_variedades/:item",controleProdutos.detalhesVariedades);
 

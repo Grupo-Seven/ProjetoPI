@@ -61,6 +61,23 @@
 
     </section>
 
+     <section class="elementoDois_article" >
+
+      <% productsFarmacia3.forEach(element2 => { %>
+       
+        <div class="elementoDois_article_div" >
+            <img class = "img_elementoDois_article_div" src="/img/<%= element.image %>" alt="">
+            <p><%= element.description %></p>
+            <P>R$ <%= toThousand(element.price) %></P>
+            <a href="/produtos/area_compras_farmacia/<%= element.item %>">
+              <button id="button_comprar" type="submit">Comprar</button></a>
+            <button type="submit">Carrinho</button>
+        </div>
+
+      <% }) %>
+
+    </section>
+
 <!-- fim segundo block de imagens---------------------------------------------------------------------------->
 
 </main>

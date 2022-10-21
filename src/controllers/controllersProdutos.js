@@ -99,6 +99,7 @@ const controleProdutos = {
 		const receivedProduto = req.body;
 		receivedProduto.image = req.file.filename; // req.file -> propriedade adicionada pelo multer, na rota!
 		receivedProduto.id = products.length + 1; // gerar o próximo ID do array, tamanho do array + 1!
+    receivedProduto.item = products.at(-1).item + 1;
 
 		products.push(receivedProduto);
 		todosProdutos.save(products);

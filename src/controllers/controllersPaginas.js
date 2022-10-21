@@ -21,12 +21,18 @@ const controlePaginas = {
 
   let productsFarmacia2 = allProducts.filter(function(value){
 
-    return value.sector == "farmacia" && value.item >= 4
+    return value.sector == "farmacia" && value.item >3 == value.item <=6
+
+  });
+
+  let productsFarmacia3 = allProducts.filter(function(value){
+
+    return value.sector == "farmacia" && value.id >= 13
 
   });
 
 
-  return res.render("farmacia",{productsFarmacia , productsFarmacia2, toThousand});
+  return res.render("farmacia",{productsFarmacia , productsFarmacia2, productsFarmacia3, toThousand});
 },
 // farmacia fim ----------------------------------------------------------------------------------------////////
 
@@ -40,15 +46,20 @@ const controlePaginas = {
       return value.sector == "pet" && value.item <= 3 
          
     });
-  
-  
+    
     let productsPet2 = allProducts.filter(function(value){
   
-      return value.sector == "pet" && value.item >= 4
+      return value.sector == "pet" && value.item >3 == value.item <=6
   
     });
   
-    return res.render("pet",{productsPet , productsPet2, toThousand});
+    let productsPet3 = allProducts.filter(function(value){
+  
+      return value.sector == "pet" && value.id >= 13
+  
+    });
+
+    return res.render("pet",{productsPet , productsPet2, productsPet3, toThousand});
  },
  // pet fim -----------------------------------------------------------------------------------------////////
 
@@ -126,10 +137,10 @@ const controlePaginas = {
 
     const allProducts = todosProdutos.findAll()
 
-    let item = req.params.item
     let produtoDetalhe = allProducts.find(function(produtoDetalhe){
 
-      return produtoDetalhe.sector == "pet" && produtoDetalhe.item == item
+
+      return produtoDetalhe.sector == "pet" && produtoDetalhe.id == req.params.id
 
     })
 

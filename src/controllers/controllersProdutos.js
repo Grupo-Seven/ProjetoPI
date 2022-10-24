@@ -6,71 +6,29 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 const controleProdutos = {
 
-  // farmacia inicio -------------------------------------------------------------------------------------////////
-  detalhesFarmacia:(req,res) =>{
-    
+  index:(req,res) =>{
+
     const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
-    
-    let item = req.params.item
-    let produtoDetalhe = allProducts.find(function(produtoDetalhe)  {
-      
-      return produtoDetalhe.sector == "farmacia" && produtoDetalhe.item == item
-    
-    })
-
-    return res.render("area_compras_farmacia" ,{produtoDetalhe});
-  },
-// farmacia fim -----------------------------------------------------------------------------------------////////
-
-
-// variedades inicio -----------------------------------------------------------------------------------////////
-  detalhesVariedades:(req,res) =>{
-    
-    const allProducts = todosProdutos.findAll()
-
-    let item = req.params.item
-    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
-
-      return produtoDetalhe.sector == "variedades" && produtoDetalhe.item == item
-
-    })
-
-    return res.render("area_compras_variedades", {produtoDetalhe});
-  },
- //variedades fim -------------------------------------------------------------------------------------////////
-
-  // pet inicio ------------------------------------------------------------------------------------------////////
-  detalhesPet:(req,res) =>{
-    
-    const allProducts = todosProdutos.findAll()
-
-    let item = req.params.item
-    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
-
-      return produtoDetalhe.sector == "pet" && produtoDetalhe.item == item
-
-    })
-
-    return res.render("area_compras_pet", {produtoDetalhe});
-  },
-
-
   
-// pet fim -------------------------------------------------------------------------------------------////////
+    let produtos = allProducts.filter(function(value){
+      return value.sector == req.params.categoria
+    })
+  
+     return res.render("categorias", {produtos, toThousand});
+   },
 
 // home inicio ------------------------------------------------------------------------------------------////////
   detalhe:(req,res) =>{
       
     const allProducts = todosProdutos.findAll()
-    let item = req.params.item;
 
     let produtoDetalhe = allProducts.find(function(produtoDetalhe)  {
       
-      return produtoDetalhe.item == item
+      return produtoDetalhe.id == req.params.id;
     
     })
 
-    return res.render("area_compras_home" ,{produtoDetalhe} );
+    return res.render("detalheProduto" ,{produtoDetalhe} );
   },
   // home fim -------------------------------------------------------------------------------------------////////
 
@@ -112,7 +70,7 @@ const controleProdutos = {
 		const { id } = req.params;
 		todosProdutos.update(id, req.body);
 
-		res.redirect('/produtos/editar/' + id);
+		res.redirect('/produtos/detalhe/' + id);
 	},
 
 	// Delete 
@@ -120,7 +78,7 @@ const controleProdutos = {
 		const { id } = req.params;
 		todosProdutos.destroy(id);
 
-		res.redirect('/produtos/' + id );
+		res.redirect('/');
 	}
 };
 

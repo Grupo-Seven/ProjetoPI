@@ -9,27 +9,13 @@ const  controleProdutos = require("../controllers/controllersProdutos");
 const validaLoginCliente = require("../middlewares/validaLoginCliente");
 
 router.get("/criarProduto", validaLoginCliente, controlePaginas.login);
-router.get("/farmacia", controlePaginas.farmacia);
-router.get("/pet", controlePaginas.pet);
-router.get("/variedades", controlePaginas.variedades);
 router.get("/", controlePaginas.home);
 router.get("/duvidas", controlePaginas.duvidas);
 router.get("/quemSomos", controlePaginas.quemSomos);
-router.get("/cart/variedades/:item", controlePaginas.cartVariedades);
-router.get("/cart/pet/:id", controlePaginas.cartPet);
-router.get("/cart/farmacia/:item", controlePaginas.cartFarmacia);
-router.get("/area_compras_variedades/:item",controleProdutos.detalhesVariedades);
-
-router.get("/area_compras_pet/:item",controleProdutos.detalhesPet);
-router.get("/area_compras_farmacia/:item",controleProdutos.detalhesFarmacia);
-
-//router.get("/PaginaCliente", controlePaginas.viewCliente);
+router.get("/cart", controlePaginas.cart);
+// router.get("/cart/farmacia/:item", controlePaginas.cartFarmacia);
 router.get("/criarProduto2", controlePaginas.criarProduto, validaLoginCliente);
-//router.get("/login", controlePaginas.login);
 router.get("/politicasdevendas", controlePaginas.politicadevendas);
-
-//router.post("/loginEmpresa",controlePaginas.loginValidation);
-
 // inicio formulario-----------------------------------------------------------------------------------------/////
 router.get("/formularioEmpresas",controleUsuariosEmpresas.formularioEmpresa);
 router.post("/formularioEmpresas",validationsEmpresa,controleUsuariosEmpresas.armazenarEmpresa);

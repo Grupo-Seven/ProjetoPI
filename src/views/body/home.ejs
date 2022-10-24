@@ -40,7 +40,7 @@
             <img class = "img_elementoUm_article_div" src="/img/<%= element1.image %>" alt="">
             <p id="descHome1"><%= element1.description %> </p>
             <p id="priceHome"> R$ <%= toThousand(element1.price) %> </p>
-            <a target="_blank" href="/produtos/area_compras_home/<%= element1.item %> ">
+            <a target="_blank" href="/produtos/detalhe/<%= element1.id %> ">
               <button id="button_comprar" type="submit">Comprar</button></a>
               <button type="submit" id="buttonCarrinho">Detalhes</button>
         </div>
@@ -67,7 +67,7 @@
             <img class = "img_elementoDois_article_div" src="/img/<%= element2.image %>" alt="">
             <p id="descHome2"><%= element2.description %> </p>
             <p id="priceHome"> R$ <%= toThousand(element2.price) %> </p>
-            <a href="/produtos/area_compras_home/<%= element2.item %> ">
+            <a href="/produtos/detalhe/<%= element2.id %> ">
               <button id="button_comprar" type="submit">Comprar</button></a>
               <button type="submit" id="buttonCarrinho">Detalhes</button>
         </div>
@@ -96,7 +96,7 @@
             <img class = "img_elementoTres_article_div" src="/img/<%= element3.image %>" alt="">
             <p id="descHome3"><%= element3.description %> </p>
             <p id="priceHome"> R$ <%= toThousand(element3.price) %> </p>
-            <a target="_blank" href="/produtos/area_compras_home/<%= element3.item %> ">
+            <a target="_blank" href="/produtos/detalhe/<%= element3.id %> ">
               <button id="button_comprar" type="submit">Comprar</button></a>
               <button type="submit" id="buttonCarrinho">Detalhes</button>
         </div>

@@ -24,21 +24,22 @@
     <div class="box">
         
         <h2>Carrinho de compras</h2>
-
-        <div class="cart">
+        <% produtosCarrinho.forEach(produto => { %>
+            <div class="cart">
               
-            <img class="imgCart" src="/img/<%= produtoDetalhe.image %>" alt="">
-            <p class="titleCart"> <%= produtoDetalhe.description %> </p>
-            <div class="addRemv">
-                
-                <p>1</p>
-                
+                <img class="imgCart" src="/img/<%= produto.image %>" alt="">
+                <p class="titleCart"> <%= produto.description %> </p>
+                <input type="number" name="quantidade" min="1" max="100">                   
+                    
+                </div>
+                <p class="price"><%= produto.price %></p>
+        
             </div>
-            <p class="price"><%= produtoDetalhe.price %></p>
-    
-        </div>
 
-            <h3>Total: <%= produtoDetalhe.price %></h3>
+        <% }) %>
+        
+
+            <h3>Total:</h3>
         
     </div>
 

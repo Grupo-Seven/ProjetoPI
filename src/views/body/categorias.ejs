@@ -28,13 +28,13 @@
               
               <div class="products1">
                   <!--corpo com imagens e detalhes com texto etc...-->
-                  <% productsVariedades.forEach(element => { %>
+                  <% produtos.forEach(element => { %>
                     
                     <div>                  
                       <img id= "imgsize" src="/img/<%= element.image %>" alt="">
                       <p><%= element.description %> </p>
                       <p> R$ <%= toThousand(element.price) %> </p>
-                      <a href="/produtos/area_compras_variedades/<%= element.item %> ">
+                      <a href="/produtos/detalhe/<%= element.id %> ">
                         <button id="button_comprar" type="submit">Comprar</button>
                       </a>
 

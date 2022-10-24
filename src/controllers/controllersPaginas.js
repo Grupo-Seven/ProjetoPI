@@ -7,83 +7,6 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 const controlePaginas = {
  
- // farmacia inicio -------------------------------------------------------------------------------------////////
- farmacia:(req,res) =>{
-
-  const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
-
-  let productsFarmacia = allProducts.filter(function(value){
-
-    return value.sector == "farmacia" && value.item <= 3
-       
-  });
-
-
-  let productsFarmacia2 = allProducts.filter(function(value){
-
-    return value.sector == "farmacia" && value.item >3 == value.item <=6
-
-  });
-
-  let productsFarmacia3 = allProducts.filter(function(value){
-
-    return value.sector == "farmacia" && value.id >= 13
-
-  });
-
-
-  return res.render("farmacia",{productsFarmacia , productsFarmacia2, productsFarmacia3, toThousand});
-},
-// farmacia fim ----------------------------------------------------------------------------------------////////
-
-// pet inicio -------------------------------------------------------------------------------------////////
-  pet:(req,res) =>{
-   
-    const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
-
-    let productsPet = allProducts.filter(function(value){
-
-      return value.sector == "pet" && value.item <= 3 
-         
-    });
-    
-    let productsPet2 = allProducts.filter(function(value){
-  
-      return value.sector == "pet" && value.item >3 == value.item <=6
-  
-    });
-  
-    let productsPet3 = allProducts.filter(function(value){
-  
-      return value.sector == "pet" && value.id >= 13
-  
-    });
-
-    return res.render("pet",{productsPet , productsPet2, productsPet3, toThousand});
- },
- // pet fim -----------------------------------------------------------------------------------------////////
-
-
-  // variedades inicio -----------------------------------------------------------------------------------------////////
- variedades:(req,res) =>{
-
-  const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
-
-  let productsVariedades = allProducts.filter(function(value){
-
-    return value.sector == "variedades" && value.item <= 3
-  })
-
-  let productsVariedades2 = allProducts.filter(function(value){
-
-    return value.sector == "variedades" && value.item >= 4
-  })
-
-   return res.render("variedades", {productsVariedades, productsVariedades2, toThousand});
- },
-  // variedades fim -----------------------------------------------------------------------------------------////////
-
-
  home:(req,res) =>{
 
   const allProducts = todosProdutos.findAll() // busca a array criada do allproducts.json que esta no models
@@ -118,48 +41,17 @@ const controlePaginas = {
     return res.render("quemSomos")
   },
 
-  cartVariedades:(req,res) =>{
+  cart:(req,res) =>{
 
     const allProducts = todosProdutos.findAll()
 
-    let item = req.params.item
-    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
+    let produtosSelecionados = req.params.query || [1,2,3]
+    let produtosCarrinho = allProducts.filter(function(produto){
 
-      return produtoDetalhe.sector == "variedades" && produtoDetalhe.item == item
-
+      return produtosSelecionados.includes(produto.id)
     })
 
-    return res.render("cart", {produtoDetalhe});
-
-  },
-
-  cartPet:(req,res) =>{
-
-    const allProducts = todosProdutos.findAll()
-
-    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
-
-
-      return produtoDetalhe.sector == "pet" && produtoDetalhe.id == req.params.id
-
-    })
-
-    return res.render("cart", {produtoDetalhe});
-
-  },
-
-  cartFarmacia:(req,res) =>{
-
-    const allProducts = todosProdutos.findAll()
-
-    let item = req.params.item
-    let produtoDetalhe = allProducts.find(function(produtoDetalhe){
-
-      return produtoDetalhe.sector == "farmacia" && produtoDetalhe.item == item
-
-    })
-
-    return res.render("cart", {produtoDetalhe});
+    return res.render("cart", {produtosCarrinho});
 
   },
   
